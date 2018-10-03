@@ -55,7 +55,7 @@ class DataGenerator(keras.utils.Sequence):
         # Initialization
 
 
-        x = np.zeros(self.batch_size, *self.dim, self.n_channels)
+        x = np.zeros((self.batch_size,*self.dim))
         SONG_LENGTH = 256
         # Generate data
         for i, ID in enumerate(list_IDs_temp):
@@ -63,7 +63,7 @@ class DataGenerator(keras.utils.Sequence):
                 continue
             # make the data from the file.
             roll = [[0] * SONG_LENGTH for x in range(128)]
-            midi = converter.parse('data_2/' + ID + '.mdi') 
+            midi = converter.parse('data_2/' + ID + '.mid') 
             notes_to_parse = None
             parts = instrument.partitionByInstrument(midi)
             if parts: # file has instrument parts
@@ -74,11 +74,11 @@ class DataGenerator(keras.utils.Sequence):
             for element in notes_to_parse:
                 if isinstance(element, note.Note):
                     midi_numb = int(element.pitch.ps)
-                    roll[midi_numb][counter] = 1
+                    roll[midi_numb][i] = 1
                 elif isinstance(element, chord.Chord):
                     for p in element.pitches: 
                         midi_numb = int(p.ps) 
-                        roll[midi_numb][counter] = 1
+                        roll[midi_numb][i] = 1
 
             # Store the input in the batch variable
             x[i,] = roll

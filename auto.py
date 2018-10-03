@@ -16,11 +16,10 @@ SONG_LENGTH = 256
 
 
 def midi_to_roll(files):
-    piano_roll = [[0] * SONG_LENGTH for x in range(128)]
-    notes = []
-    for file in glob.glob(files):
+    for filename, ids in enumerate(files): #(data_3/*.mdi)
+        roll = [[0] * SONG_LENGTH for x in range(128)]
         counter = 0
-        midi = converter.parse(file)
+        midi = converter.parse(filename) 
         notes_to_parse = None
         parts = instrument.partitionByInstrument(midi)
         if parts: # file has instrument parts
@@ -33,12 +32,25 @@ def midi_to_roll(files):
             if isinstance(element, note.Note):
                 midi_numb = int(element.pitch.ps)
                 if(counter < SONG_LENGTH):
-                    piano_roll[midi_numb][counter] = 1
+                    roll[midi_numb][counter] = 1
             elif isinstance(element, chord.Chord):
                 for p in element.pitches: 
                     midi_numb = int(p.ps) 
                     if(counter < SONG_LENGTH):  
-                        piano_roll[midi_numb][counter] = 1
+                        roll[midi_numb][counter] = 1
         counter += 1
-pprint(piano_roll)
+        yield roll
+    
 
+
+
+
+
+def main(_):
+    files = glob.glob('data_3/*.mdi')
+    outputs = midi_to_roll(files)
+    pprint(outputs)
+
+
+if __name__ == '__main__':
+    main(None)

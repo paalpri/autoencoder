@@ -12,7 +12,6 @@ from music21 import converter, instrument, note, chord
 from music21 import *
 import pretty_midi
 from pprint import pprint
-SONG_LENGTH = 128
 
 
 
@@ -56,7 +55,7 @@ class DataGenerator(keras.utils.Sequence):
 
 
         x = np.zeros((self.batch_size,*self.dim))
-        SONG_LENGTH = 256
+        SONG_LENGTH = 128
         # Generate data
         for i, ID in enumerate(list_IDs_temp):
             if i == SONG_LENGTH:
@@ -79,9 +78,9 @@ class DataGenerator(keras.utils.Sequence):
                     for p in element.pitches: 
                         midi_numb = int(p.ps) 
                         roll[midi_numb][i] = 1
-
             # Store the input in the batch variable
             x[i,] = roll
+        pprint(x[1].tolist())
         return x
 
 

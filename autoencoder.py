@@ -72,35 +72,19 @@ def main(self):
     partition = {'train': [str(i) for i in range(n_samples)],
              'validation': [str(i) for i in range(n_samples, n_samples+10)]}
 
-    print(partition['train'])
     training_generator = DataGenerator(**params, list_IDs=partition['train'])
     validation_generator = DataGenerator(**params, list_IDs=partition['validation'])
     
     autoencoder.fit_generator(generator=training_generator,
                             validation_data=validation_generator,
-                            use_multiprocessing=False,
-                            workers=1)
+                            epochs = 5,
+                            callbacks=[TensorBoard(log_dir='/tmp/autoencoder')])
 
     #Decode
     decoded = autoencoder.predict(x_test)
     decode(decoded)
 
 
-
-
-
-
-
-
-    '''
-    #Training data
-    (x_train, _), (x_test, _) = mnist.load_data()
-
-    x_train = x_train.astype('float32') / 255.
-    x_test = x_test.astype('float32') / 255.    
-    x_train = np.reshape(x_train, (len(x_train), 28, 28, 1))  # adapt this if using `channels_first` image data format
-    x_test = np.reshape(x_test, (len(x_test), 28, 28, 1))  # adapt this if using `channels_first` image data format
-    '''
 
     '''
     #Start training 

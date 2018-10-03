@@ -40,6 +40,7 @@ class DataGenerator(keras.utils.Sequence):
 
         # Generate data
         x = self.__data_generation(list_IDs_temp)
+        x = np.reshape(x,(np.shape(x),1))
 
         return x, x
 
@@ -80,7 +81,6 @@ class DataGenerator(keras.utils.Sequence):
                         roll[midi_numb][i] = 1
             # Store the input in the batch variable
             x[i,] = roll
-        pprint(x[1].tolist())
         return x
 
 

@@ -66,7 +66,7 @@ def main(self):
     
     n_samples = 82
     params = {'dim': (128,128),
-          'batch_size': 4,
+          'batch_size': 5,
           'n_channels': 1,
           'shuffle': True}
     partition = {'train': [str(i) for i in range(n_samples)],

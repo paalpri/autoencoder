@@ -40,8 +40,6 @@ class DataGenerator(keras.utils.Sequence):
 
         # Generate data
         x = self.__data_generation(list_IDs_temp)
-        x = np.reshape(x,(np.shape(x),1))
-
         return x, x
 
     def on_epoch_end(self):
@@ -55,7 +53,7 @@ class DataGenerator(keras.utils.Sequence):
         # Initialization
 
 
-        x = np.zeros((self.batch_size,*self.dim))
+        x = np.empty((self.batch_size,*self.dim, self.n_channels))
         SONG_LENGTH = 128
         # Generate data
         for i, ID in enumerate(list_IDs_temp):
@@ -80,7 +78,7 @@ class DataGenerator(keras.utils.Sequence):
                         midi_numb = int(p.ps) 
                         roll[midi_numb][i] = 1
             # Store the input in the batch variable
-            x[i,] = roll
+            x[i,] = np.expand_dims(roll,2) ## Fix so that it works with n_channels later
         return x
 
 

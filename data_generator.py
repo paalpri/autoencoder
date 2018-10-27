@@ -17,7 +17,7 @@ from pprint import pprint
 
 class DataGenerator(keras.utils.Sequence):
     'Generates data for Keras'
-    def __init__(self, list_IDs, batch_size=16, dim=(128,128), n_channels=1, shuffle=True):
+    def __init__(self, list_IDs,filepath, batch_size=16, dim=(128,128), n_channels=1,  shuffle=True):
         'Initialization'
         self.dim = dim
         self.batch_size = batch_size
@@ -25,6 +25,7 @@ class DataGenerator(keras.utils.Sequence):
         self.n_channels = n_channels
         self.shuffle = shuffle
         self.on_epoch_end()
+        self.filepath = filepath
 
     def __len__(self):
         'Denotes the number of batches per epoch'
@@ -61,7 +62,7 @@ class DataGenerator(keras.utils.Sequence):
                 continue
             # make the data from the file.
             roll = [[0] * SONG_LENGTH for x in range(128)]
-            midi = converter.parse('data_2/' + ID + '.mid') 
+            midi = converter.parse(self.filepath + '/' + ID + '.mid') 
             notes_to_parse = None
             parts = instrument.partitionByInstrument(midi)
             if parts: # file has instrument parts

@@ -1,4 +1,4 @@
-from keras.layers import Input, Dense, Conv2D, MaxPooling2D, UpSampling2D
+from keras.layers import Input, Dense, Conv2D, MaxPooling2D, UpSampling2D, Dropout
 from keras.models import Model
 from keras import backend as K
 
@@ -14,24 +14,15 @@ from data_generator import DataGenerator
 BATCH_SIZE = 32
 
 def decode(decoded):
-    n = 10
-    plt.figure(figsize=(20, 4))
-    for i in range(n):
-        # display original
-        ax = plt.subplot(2, n, i)
-        plt.imshow(x_test[i].reshape(28, 28))
-        plt.gray()
-        ax.get_xaxis().set_visible(False)
-        ax.get_yaxis().set_visible(False)
-
-        # display reconstruction
-        ax = plt.subplot(2, n, i + n)
-        plt.imshow(decoded[i].reshape(28, 28))
-        plt.gray()
-        ax.get_xaxis().set_visible(False)
-        ax.get_yaxis().set_visible(False)
-    plt.show()
-
+    decoded = K.round(decoded)
+    decoded = K.eval(decoded)
+    for i in range(decoded.shape[0]):
+        for j in range(decoded.shape[1]):
+            for k in range(decoded.shape[2]):
+                if(decoded[i][j][k] == 1):
+                    print(1)
+    
+    return
 def model(input_song):
 
     x = Conv2D(16, 3, activation='relu', padding='same')(input_song)
@@ -45,10 +36,13 @@ def model(input_song):
     
 
     x = Conv2D(8, 3, activation='relu', padding='same')(encoded)
+    x = Dropout(0.5)(x)
     x = UpSampling2D((2, 2))(x)
     x = Conv2D(8, 3, activation='relu', padding='same')(x)
+    x = Dropout(0.5)(x)
     x = UpSampling2D((2, 2))(x)
     x = Conv2D(8, 3, activation='relu', padding = 'same')(x)
+    x = Dropout(0.5)(x)
     x = UpSampling2D((2, 2))(x)
     print(np.shape(x))
     decoded = Conv2D(1, 1, activation='sigmoid', padding='same')(x)
@@ -66,39 +60,30 @@ def main(self):
     autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
 
     
-    n_samples = 82
+    n_samples = 81
+    train_folder = 'training_data/'
+    test_folder = 'test_data/'
     params = {'dim': (128,128),
           'batch_size': 5,
           'n_channels': 1,
           'shuffle': True}
     partition = {'train': [str(i) for i in range(n_samples)],
-             'validation': [str(i) for i in range(n_samples, n_samples+10)]}
+             'validation': [str(i) for i in range(n_samples, n_samples+10)],
+             'test' : [str(i) for i in range(n_samples+10, n_samples+11)]}
 
-    training_generator = DataGenerator(**params, list_IDs=partition['train'])
-    validation_generator = DataGenerator(**params, list_IDs=partition['validation'])
-    
+    training_generator = DataGenerator(**params,list_IDs=partition['train'])
+    validation_generator = DataGenerator(**params,list_IDs=partition['validation'])
+    test_generator = DataGenerator(**params,list_IDs=partition['test'])
+   
     autoencoder.fit_generator(generator=training_generator,
                             validation_data=validation_generator,
-                            epochs = 5,
+                            epochs = 10,
                             callbacks=[TensorBoard(log_dir='/tmp/autoencoder')])
 
     #Decode
-    decoded = autoencoder.predict(x_test)
+    decoded = autoencoder.predict_generator(generator = validation_generator)
     decode(decoded)
 
-
-
-    '''
-    #Start training 
-    autoencoder.fit(x_train, x_train,
-                epochs=5,
-                batch_size=BATCH_SIZE,
-                shuffle=True,
-                validation_data=(x_test, x_test),
-                callbacks=[TensorBoard(log_dir='/tmp/autoencoder')])
-    '''
-
-   
 
 if __name__ == '__main__':
     main(None)

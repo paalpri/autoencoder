@@ -7,10 +7,13 @@ import numpy as np
 from keras.callbacks import TensorBoard
 from data_generator import DataGenerator
 from keras.callbacks import ModelCheckpoint
+import os
+import tensorflow as tf
 
 BATCH_SIZE = 32
 
 def decode(decoded):
+    print("Is there a one ? ")
     decoded = K.round(decoded)
     decoded = K.eval(decoded)
     for i in range(decoded.shape[0]):
@@ -58,28 +61,37 @@ def main(filepath):
     autoencoder = model(input_song)
     # If we want to load from earlier run
     #autoencoder.load_weights(filepath)
-    autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
+    autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy',  metrics=['accuracy'])
 
     
     n_samples = 81
-    train_folder = 'training_data/'
-    test_folder = 'test_data/'
+    train_folder = 'training_data'
+    validation_folder = 'validation'
+    test_folder = 'test_data'
+
+    fold = os.listdir(train_folder) # dir is your directory path
+    nmb_train = len(fold)
+    nmb_validation =int(nmb_train * 0.3)
+
     params = {'dim': (128,128),
           'batch_size': 5,
           'n_channels': 1,
           'shuffle': True}
-    partition = {'train': [str(i) for i in range(n_samples)],
-             'validation': [str(i) for i in range(n_samples, n_samples+10)],
+    partition = {'train': [str(i) for i in range(nmb_train - nmb_validation )],
+             'validation': [str(i) for i in range(nmb_train - nmb_validation, nmb_train)],
              'test' : [str(i) for i in range(n_samples+10, n_samples+11)]}
 
-    training_generator = DataGenerator(**params, filepath = "training_data", list_IDs=partition['train'])
-    validation_generator = DataGenerator(**params,filepath = "validation_data", list_IDs=partition['validation'])
+    training_generator = DataGenerator(**params, filepath = train_folder, list_IDs=partition['train'])
+    validation_generator = DataGenerator(**params,filepath = train_folder, list_IDs=partition['validation'])
     #test_generator = DataGenerator(**params,list_IDs=partition['test'])
 
     
     #checkpoint
-    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max', )
-    callbacks_list = [checkpoint]
+    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+
+    tensorboard = TensorBoard(log_dir='./logs', histogram_freq=0,
+                          write_graph=True, write_images=True)
+    callbacks_list = [checkpoint, tensorboard]
 
     
    

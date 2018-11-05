@@ -26,12 +26,7 @@ autoencoder.load_weights("weights.best.hdf5",by_name = True)
 print(autoencoder.summary())
 
 
-#autoencoder.load_weights(filepath)
-#checkpoint
-    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max', )
-    callbacks_list = [checkpoint]#, [TensorBoard(log_dir='/tmp/autoencoder')]]
 
-    
 
 
 
@@ -40,3 +35,44 @@ model = load_model("weights.best.hdf5", )
 # summarize layers
 print(model.summary())
 # plot graph
+
+
+
+def make_image(tensor):
+    """
+    Convert an numpy representation image to Image protobuf.
+    Copied from https://github.com/lanpa/tensorboard-pytorch/
+    """
+    from PIL import Image
+    height, width, channel = tensor.shape
+    image = Image.fromarray(tensor)
+    import io
+    output = io.BytesIO()
+    image.save(output, format='PNG')
+    image_string = output.getvalue()
+    output.close()
+    return tf.Summary.Image(height=height,
+                         width=width,
+                         colorspace=channel,
+                         encoded_image_string=image_string)
+
+class TensorBoardImage(keras.callbacks.Callback):
+    def __init__(self, tag):
+        super().__init__() 
+        self.tag = tag
+
+    def on_epoch_end(self, epoch, logs={}):
+        # Load image
+        img = data.astronaut()
+        # Do something to the image
+        img = (255 * skimage.util.random_noise(img)).astype('uint8')
+
+        image = make_image(img)
+        summary = tf.Summary(value=[tf.Summary.Value(tag=self.tag, image=image)])
+        writer = tf.summary.FileWriter('./logs')
+        writer.add_summary(summary, epoch)
+        writer.close()
+
+        return
+
+tbi_callback = TensorBoardImage('Image Example')

@@ -5,6 +5,7 @@ from keras.objectives import binary_crossentropy
 from keras.callbacks import LearningRateScheduler
 import numpy as np
 import keras.backend as K
+from keras.callbacks import ModelCheckpoint
 import tensorflow as tf
 import sys
 import random
@@ -44,18 +45,18 @@ h_p = decoder_hidden(z)
 outputs = decoder_out(h_p)
 
 # Overall VAE model, for reconstruction and training
-vae = Model(inputs, outputs)
+vae = Model(inputs, outputs, name='autoencoder')
 
 # Encoder model, to encode input into latent variable
 # We use the mean as the output as it is the center point, the representative of the gaussian
-encoder = Model(inputs, mu)
+encoder = Model(inputs, mu, name='encoder')
 
 # Generator model, generate new data given latent variable z
 
 d_in = Input(shape=(n_z,))
 d_h = decoder_hidden(d_in)
 d_out = decoder_out(d_h)
-decoder = Model(d_in, d_out)
+decoder = Model(d_in, d_out, name='decoder')
 
 
 def vae_loss(y_true, y_pred):
@@ -66,6 +67,12 @@ def vae_loss(y_true, y_pred):
     kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
 
     return recon + kl
+
+
+#checkpoint
+checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+
+callbacks_list = [checkpoint, tensorboard]
 
 
 filename = sys.argv[1]
@@ -83,4 +90,4 @@ with open('testfile.txt', 'w') as f:
 train_valid_split = int(len(data)*0.80)
 # Split the questions and answers into training and validating data
 vae.compile(optimizer='adam', loss=vae_loss)
-vae.fit(data, data, verbose='1', batch_size=m, nb_epoch=n_epoch, validation_split=0.2)
+vae.fit(data, data, verbose='1', batch_size=m, nb_epoch=n_epoch, validation_split=0.2, callbacks=callbacks_list)

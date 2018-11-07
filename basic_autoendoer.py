@@ -29,6 +29,8 @@ original_dim = 15
 intermediate_dim = 5
 latent_dim = 2
 
+slim shady
+
 def sample_z(args):
     mu, log_sigma = args
     eps = K.random_normal(shape=(batch_size, latent_dim), mean=0., stddev=1.0)

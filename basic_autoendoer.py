@@ -15,7 +15,7 @@ from pprint import pprint
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 
 # Parameters
-m = 20
+m = 64
 n_z = 2  # Number of encoder outputs
 n_epoch = 1000
 input_size = 10

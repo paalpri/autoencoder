@@ -16,20 +16,18 @@ from pprint import pprint
 import shutil, os
 
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
-print(keras.__version__)
-print(tf.__version__)
+keras.__version__
+tf.__version__
 # Dele the previous logs, for better tensorboard looks
 if os.path.isdir("logs"):
     print("What")
     shutil.rmtree("logs")
-if os.path.isdir("logs"):
-    print("tha fuck")
 # Parameters
 batch_size = 64
-n_epoch = 50
+n_epoch = 20
 original_dim = 15
-intermediate_dim = 6
-latent_dim = 6
+intermediate_dim = 5
+latent_dim = 2
 
 def sample_z(args):
     mu, log_sigma = args
@@ -87,7 +85,19 @@ filename = sys.argv[1]
 
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int)
+data = np.array(data, dtype=float)
+note_min = np.min(data)
+note_max = np.max(data)
 
-vae.fit(data, data, verbose=1, shuffle=True, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
+for line in data:
+    for i in range(len(line)):
+        #minmax scaling (0-1)
+        line[i] = (line[i]- note_min)/(note_max-note_min)
+        #Reverse minmax scaling
+        #i = int(i*(note_max - note_min) + note_min) 
+        
+
+vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
+vae.fit(data, data, verbose=1, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
 decoder.save('decoder_model.h5')
 

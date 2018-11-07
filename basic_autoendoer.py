@@ -16,7 +16,7 @@ from pprint import pprint
 
 # Parameters
 batch_size = 64
-n_epoch = 1000
+n_epoch = 20
 original_dim = 15
 intermediate_dim = 5
 latent_dim = 2
@@ -24,7 +24,7 @@ latent_dim = 2
 def sample_z(args):
     mu, log_sigma = args
     eps = K.random_normal(shape=(batch_size, latent_dim), mean=0., stddev=1.0)
-    return mu + K.exp(log_sigma) * eps # /2 på log sigma
+    return mu + K.exp(log_sigma/2) * eps # /2 på log sigma
 
 
 # Q(z|X) -- encoder
@@ -67,7 +67,7 @@ def vae_loss(y_true, y_pred):
 
 vae.summary()
 # checkpoint
-checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+checkpoint = ModelCheckpoint('training_weights.hdf5', save_best_only=True, mode='max')
 callbacks_list = [checkpoint]
 
 
@@ -85,9 +85,10 @@ for line in data:
         #minmax scaling (0-1)
         line[i] = (line[i]- note_min)/(note_max-note_min)
         #Reverse minmax scaling
-        #i = int(i*(note_max - note_min) + note_min)  
+        #i = int(i*(note_max - note_min) + note_min) 
+        
 
-vae.compile(optimizer='rmsprop', loss=vae_loss, metrics=['accuracy'])
-vae.fit(data, data, verbose='2', batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
+vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
+vae.fit(data, data, verbose=1, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
 decoder.save('decoder_model.h5')
 

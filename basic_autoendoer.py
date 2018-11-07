@@ -87,8 +87,7 @@ with open('testfile.txt', 'w') as f:
         f.write(" ".join(map(str, item)) + "\n")
 '''
 # Validate the training with 20% of the data, leave 80 % for training
-#train_valid_split = int(len(data)*0.80)
+train_valid_split = int(len(data)*0.80)
 # Split the questions and answers into training and validating data
-
 vae.compile(optimizer='adam', loss=vae_loss)
 vae.fit(data, data, verbose='1', batch_size=m, nb_epoch=n_epoch, validation_split=0.2, callbacks=callbacks_list)

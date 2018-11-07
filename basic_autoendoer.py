@@ -23,8 +23,8 @@ if os.path.isdir("logs"):
     print("What")   
     shutil.rmtree("logs")
 # Parameters
-batch_size = 64
-n_epoch = 20
+batch_size = 30
+n_epoch = 2
 original_dim = 15
 intermediate_dim = 5
 latent_dim = 2
@@ -37,7 +37,7 @@ def sample_z(args):
 
 
 # Q(z|X) -- encoder
-inputs = Input(shape=(original_dim,))
+inputs = Input(batch_shape=(batch_size, original_dim))
 h_q = Dense(intermediate_dim, activation='relu')(inputs)
 mu = Dense(latent_dim, activation='linear')(h_q)
 log_sigma = Dense(latent_dim, activation='linear')(h_q)
@@ -53,7 +53,7 @@ outputs = decoder_out(h_p)
 
 # Overall VAE model, for reconstruction and training
 vae = Model(inputs, outputs, name='autoencoder')
-
+'''
 # Encoder model, to encode input into latent variable
 # We use the mean as the output as it is the center point, the representative of the gaussian
 encoder = Model(inputs, mu, name='encoder')
@@ -63,12 +63,12 @@ d_in = Input(shape=(latent_dim,))
 d_h = decoder_hidden(d_in)
 d_out = decoder_out(d_h)
 decoder = Model(d_in, d_out, name='decoder')
-
+'''
 
 def vae_loss(y_true, y_pred):
     """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
     # E[log P(X|z)]
-    recon = K.sum(K.binary_crossentropy(y_pred, y_true), axis=1)
+    recon = K.mean(K.square(y_pred - y_true), axis=-1)
     # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
     kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
 
@@ -87,7 +87,7 @@ def minmax_norm(in_data):
     return in_data
 
 
-def minmax_norm(in_data):
+def minmax_reverse(in_data):
     in_data = np.array(in_data, dtype=float)
     note_min = np.min(in_data)
     note_max = np.max(in_data)
@@ -110,8 +110,19 @@ filename = sys.argv[1]
 
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int) 
+print(len(data))
+
+#data =  minmax_norm(data)
+x = len(data)%batch_size
+
+data = data[:len(data)-x]
+print(len(data))
+
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
-vae.fit(data, data, verbose=1, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
-decoder.save('decoder_model.h5')
+vae.fit(data, data, verbose=1, shuffle=True, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
+p = vae.predict(data[:30],verbose=1, batch_size=batch_size)
+#pred = minmax_reverse(p)
+
+#decoder.save('decoder_model.h5')
 

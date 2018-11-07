@@ -20,7 +20,7 @@ keras.__version__
 tf.__version__
 # Dele the previous logs, for better tensorboard looks
 if os.path.isdir("logs"):
-    print("What")
+    print("What")   
     shutil.rmtree("logs")
 # Parameters
 batch_size = 64
@@ -75,6 +75,30 @@ def vae_loss(y_true, y_pred):
     return recon + kl
 
 
+def minmax_norm(in_data):
+    in_data = np.array(in_data, dtype=float)
+    note_min = np.min(in_data)
+    note_max = np.max(in_data)
+
+    for line in in_data:
+        for i in range(len(line)):
+            #minmax scaling (0-1)
+            line[i] = (line[i]- note_min)/(note_max-note_min)
+    return in_data
+
+
+def minmax_norm(in_data):
+    in_data = np.array(in_data, dtype=float)
+    note_min = np.min(in_data)
+    note_max = np.max(in_data)
+
+    for line in in_data:
+        for i in range(len(line)):
+            #Reverse minmax scaling
+            line[i] = int(line[i]*(note_max - note_min) + note_min) 
+    return in_data
+
+
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['acc'])
 vae.summary()
 # checkpoint
@@ -85,18 +109,7 @@ callbacks_list = [tensorboard]
 filename = sys.argv[1]
 
 # makes a txt document into a list of arrays, one array for each line
-data = np.genfromtxt(filename, delimiter=" ", dtype=int)
-data = np.array(data, dtype=float)
-note_min = np.min(data)
-note_max = np.max(data)
-
-for line in data:
-    for i in range(len(line)):
-        #minmax scaling (0-1)
-        line[i] = (line[i]- note_min)/(note_max-note_min)
-        #Reverse minmax scaling
-        #i = int(i*(note_max - note_min) + note_min) 
-        
+data = np.genfromtxt(filename, delimiter=" ", dtype=int) 
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
 vae.fit(data, data, verbose=1, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)

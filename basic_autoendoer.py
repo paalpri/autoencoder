@@ -76,34 +76,7 @@ filename = sys.argv[1]
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int)
 
-<<<<<<< HEAD
 vae.compile(optimizer='rmsprop', loss=vae_loss, metrics=['accuracy'])
 vae.fit(data, data, verbose='2', batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
 decoder.save('decoder_model.h5')
-||||||| merged common ancestors
-''' For test purposes, generates a random test file with numbers
-data = [(random.sample(range(1, 20), 10)) for k in range(100)]
-with open('testfile.txt', 'w') as f:
-    for item in data:
-        f.write(" ".join(map(str, item)) + "\n")
-'''
-# Validate the training with 20% of the data, leave 80 % for training
-train_valid_split = int(len(data)*0.80)
-# Split the questions and answers into training and validating data
-vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
-vae.fit(data, data, verbose='2', batch_size=m, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
-decoder.save('decoder_model.h5')
-=======
-''' For test purposes, generates a random test file with numbers
-data = [(random.sample(range(1, 20), 10)) for k in range(100)]
-with open('testfile.txt', 'w') as f:
-    for item in data:
-        f.write(" ".join(map(str, item)) + "\n")
-'''
-# Validate the training with 20% of the data, leave 80 % for training
-train_valid_split = int(len(data)*0.80)
-# Split the questions and answers into training and validating data
-vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
-vae.fit(data, data, verbose='2', batch_size=m, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
-decoder.save('decoder_model.h5')
->>>>>>> 614cc5918edd76fa985ef19fb666b2e99ba9da03
+

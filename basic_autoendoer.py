@@ -6,6 +6,7 @@ from keras.callbacks import LearningRateScheduler
 import numpy as np
 import keras.backend as K
 from keras.callbacks import ModelCheckpoint
+from keras.models import load_model
 import tensorflow as tf
 import sys
 import random
@@ -13,12 +14,10 @@ from pprint import pprint
 
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 
-
-
 # Parameters
 m = 20
 n_z = 2  # Number of encoder outputs
-n_epoch = 10
+n_epoch = 1000
 input_size = 10
 
 
@@ -70,9 +69,8 @@ def vae_loss(y_true, y_pred):
 
 
 #checkpoint
-checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
-
-callbacks_list = [checkpoint, tensorboard]
+checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+callbacks_list = [checkpoint]
 
 
 filename = sys.argv[1]
@@ -89,5 +87,6 @@ with open('testfile.txt', 'w') as f:
 # Validate the training with 20% of the data, leave 80 % for training
 train_valid_split = int(len(data)*0.80)
 # Split the questions and answers into training and validating data
-vae.compile(optimizer='adam', loss=vae_loss)
-vae.fit(data, data, verbose='1', batch_size=m, nb_epoch=n_epoch, validation_split=0.2, callbacks=callbacks_list)
+vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
+vae.fit(data, data, verbose='2', batch_size=m, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
+decoder.save('decoder_model.h5')

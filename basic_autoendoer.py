@@ -15,31 +15,30 @@ from pprint import pprint
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 
 # Parameters
-m = 64
-n_z = 2  # Number of encoder outputs
+batch_size = 64
 n_epoch = 1000
-input_size = 10
-
+original_dim = 15
+intermediate_dim = 5
+latent_dim = 2
 
 def sample_z(args):
     mu, log_sigma = args
-    eps = K.random_normal(shape=(m, n_z), mean=0., stddev=1.0)
-    return mu + K.exp(log_sigma / 2) * eps
+    eps = K.random_normal(shape=(batch_size, latent_dim), mean=0., stddev=1.0)
+    return mu + K.exp(log_sigma) * eps # /2 på log sigma
 
 
 # Q(z|X) -- encoder
-inputs = Input(shape=(input_size,))
-h_q = Dense(5, activation='relu')(inputs)
-mu = Dense(n_z, activation='linear')(h_q)
-log_sigma = Dense(n_z, activation='linear')(h_q)
+inputs = Input(shape=(original_dim,))
+h_q = Dense(intermediate_dim, activation='relu')(inputs)
+mu = Dense(latent_dim, activation='linear')(h_q)
+log_sigma = Dense(latent_dim, activation='linear')(h_q)
 
 # Sample z ~ Q(z|X)
-z = Lambda(sample_z)([mu, log_sigma])
+z = Lambda(sample_z, output_shape=(latent_dim,))([mu, log_sigma])
 
 # P(X|z) -- decoder
-decoder_hidden = Dense(5, activation='relu')
-decoder_out = Dense(input_size, activation='sigmoid')
-
+decoder_hidden = Dense(intermediate_dim, activation='relu')
+decoder_out = Dense(original_dim, activation='sigmoid')
 h_p = decoder_hidden(z)
 outputs = decoder_out(h_p)
 
@@ -51,8 +50,7 @@ vae = Model(inputs, outputs, name='autoencoder')
 encoder = Model(inputs, mu, name='encoder')
 
 # Generator model, generate new data given latent variable z
-
-d_in = Input(shape=(n_z,))
+d_in = Input(shape=(latent_dim,))
 d_h = decoder_hidden(d_in)
 d_out = decoder_out(d_h)
 decoder = Model(d_in, d_out, name='decoder')
@@ -67,26 +65,17 @@ def vae_loss(y_true, y_pred):
 
     return recon + kl
 
-
-#checkpoint
+vae.summary()
+# checkpoint
 checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 callbacks_list = [checkpoint]
 
 
 filename = sys.argv[1]
-vae.summary()
+
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int)
 
-''' For test purposes, generates a random test file with numbers
-data = [(random.sample(range(1, 20), 10)) for k in range(100)]
-with open('testfile.txt', 'w') as f:
-    for item in data:
-        f.write(" ".join(map(str, item)) + "\n")
-'''
-# Validate the training with 20% of the data, leave 80 % for training
-train_valid_split = int(len(data)*0.80)
-# Split the questions and answers into training and validating data
-vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
-vae.fit(data, data, verbose='2', batch_size=m, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
+vae.compile(optimizer='rmsprop', loss=vae_loss, metrics=['accuracy'])
+vae.fit(data, data, verbose='2', batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
 decoder.save('decoder_model.h5')

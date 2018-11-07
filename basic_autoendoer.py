@@ -16,7 +16,7 @@ from pprint import pprint
 
 
 # Parameters
-m = 20
+m = 64
 n_z = 2  # Number of encoder outputs
 n_epoch = 10
 input_size = 10

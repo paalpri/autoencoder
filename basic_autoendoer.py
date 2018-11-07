@@ -20,11 +20,11 @@ keras.__version__
 tf.__version__
 # Dele the previous logs, for better tensorboard looks
 if os.path.isdir("logs"):
-    print("What")
+    print("What")   
     shutil.rmtree("logs")
 # Parameters
-batch_size = 32
-n_epoch = 50
+batch_size = 30
+n_epoch = 20
 original_dim = 15
 intermediate_dim = 5
 latent_dim = 2
@@ -68,13 +68,35 @@ decoder = Model(d_in, d_out, name='decoder')
 def vae_loss(y_true, y_pred):
     """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
     # E[log P(X|z)]
-    recon = K.sum(K.binary_crossentropy(y_pred, y_true), axis=1)
+    recon = K.mean(K.square(y_pred - y_true), axis=-1)
     # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
     # kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
     # kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
     kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
 
     return recon + kl
+
+
+def minmax_norm(in_data):
+    in_data = np.array(in_data, dtype=float)
+    note_min = np.min(in_data)
+    note_max = np.max(in_data)
+
+    for line in in_data:
+        for i in range(len(line)):
+            #minmax scaling (0-1)
+            line[i] = (line[i]- note_min)/(note_max-note_min)
+    return in_data, note_min, note_max
+
+
+def minmax_reverse(in_data, note_min, note_max):
+    in_data = np.array(in_data, dtype=float)
+
+    for line in in_data:
+        for i in range(len(line)):
+            #Reverse minmax scaling
+            line[i] = int(line[i]*(note_max - note_min) + note_min) 
+    return in_data
 
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['acc'])
@@ -87,29 +109,25 @@ callbacks_list = [tensorboard]
 filename = sys.argv[1]
 
 # makes a txt document into a list of arrays, one array for each line
-data = np.genfromtxt(filename, delimiter=" ", dtype=int)
+data = np.genfromtxt(filename, delimiter=" ", dtype=int) 
 
-data = np.array(data, dtype=float)
-note_min = np.min(data)
-note_max = np.max(data)
+x = len(data)%batch_size
+data = data[:len(data)-x]
 
-for line in data:
-    for i in range(len(line)):
-        #minmax scaling (0-1)
-        line[i] = (line[i]- note_min)/(note_max-note_min)
-        #Reverse minmax scaling
-        #i = int(i*(note_max - note_min) + note_min) 
 
-data = data[:-(int(len(data) % batch_size))]
-test_data = data[int(len(data)*0.95):]
-print(test_data.shape)
+data, note_min, note_max =  minmax_norm(data)
+
+
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
 vae.fit(data, data, verbose=1, shuffle=True, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
-decoder.save('decoder_model.h5')
-test_data = test_data[:-(int(len(test_data) % batch_size))]
-pred = vae.predict(test_data, batch_size=batch_size)
-print(pred.shape)
-print("the predicted is: {}".format(pred[1]))
-print("The input was: {}".format(test_data[1]))
+p = vae.predict(data[:30],verbose=1, batch_size=batch_size)
+data = minmax_reverse(data,note_min,note_max)
+pred = minmax_reverse(p,note_min,note_max)
+
+for i in range(30):
+    print("Input: %s" %(data[i]))
+    print("Predicted: %s" %(pred[i]))
+
+#decoder.save('decoder_model.h5')
 

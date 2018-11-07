@@ -14,9 +14,6 @@ import sys
 import random
 from pprint import pprint
 import shutil, os
-'''
-RANDOMMMMhehdhdererMMMM
-'''
 
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 keras.__version__
@@ -32,7 +29,6 @@ original_dim = 15
 intermediate_dim = 5
 latent_dim = 2
 
-slim shady
 
 def sample_z(args):
     mu, log_sigma = args

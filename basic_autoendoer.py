@@ -14,6 +14,9 @@ import sys
 import random
 from pprint import pprint
 import shutil, os
+'''
+RANDOMMMMMMMM
+'''
 
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 keras.__version__

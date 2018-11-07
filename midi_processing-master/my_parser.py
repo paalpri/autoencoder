@@ -87,7 +87,7 @@ def print_track(pattern, wanted_track, window, shift):
                 cur_group = []
 
             for i in range(0, len(all_notes)-window, shift):
-                print ' '.join([str(all_notes[i+j].pitch_number) for j in range(window)])
+                print(' '.join([str(all_notes[i+j].pitch_number) for j in range(window)]))
 
 def check_tracks(filename, pattern, search_instrument, percentage):
     for (track_id, track) in enumerate(pattern):
@@ -108,7 +108,7 @@ def check_tracks(filename, pattern, search_instrument, percentage):
                 not_single += 1
         if (single+not_single) != 0:
             if(track_instrument_number == search_instrument and float(single)/(single+not_single) >= percentage):
-                print "\n%s %d" % (filename, track_id)
+                print("\n%s %d" % (filename, track_id))
 
        
 
@@ -174,7 +174,7 @@ elif args.info:
     pattern = midi.read_midifile(args.filename)
     for (track_id, track) in enumerate(pattern):
         (track_name, track_instrument, track_instrument_number, track_notes) = get_elements_from_track(track)
-        print "\tTrack %02d [%25s]\t('%s'; %d notes)" %(track_id, track_instrument, track_name, len(track_notes))
+        print("\tTrack %02d [%25s]\t('%s'; %d notes)" %(track_id, track_instrument, track_name, len(track_notes)))
         
 elif args.all or args.track_info != None:
     pattern = midi.read_midifile(args.filename)
@@ -182,7 +182,7 @@ elif args.all or args.track_info != None:
         if args.all or args.track_info == track_id:
             (track_name, track_instrument, track_instrument_number, track_notes) = get_elements_from_track(track)
             
-            print "\nProcessing track %02d [%25s]\t('%s'; %d notes)" %(track_id, track_instrument, track_name, len(track_notes))
+            print("\nProcessing track %02d [%25s]\t('%s'; %d notes)" %(track_id, track_instrument, track_name, len(track_notes)))
             #print track_notes
 
             if len(track_notes) == 0:
@@ -190,6 +190,6 @@ elif args.all or args.track_info != None:
 
             groups = get_groups(track_notes)
             for cur_group in groups:     
-                print '\t', ', '.join([str(i) for i in cur_group])
+                print('\t', ', '.join([str(i) for i in cur_group]))
                 #print "[%d]\t%s(%d)" % (note_info.time, note_info.pitch, note_info.octave)
 

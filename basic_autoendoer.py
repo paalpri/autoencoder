@@ -75,6 +75,17 @@ filename = sys.argv[1]
 
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int)
+data = np.array(data, dtype=float)
+
+note_min = np.min(data)
+note_max = np.max(data)
+
+for line in data:
+    for i in range(len(line)):
+        #minmax scaling (0-1)
+        line[i] = (line[i]- note_min)/(note_max-note_min)
+        #Reverse minmax scaling
+        #i = int(i*(note_max - note_min) + note_min)  
 
 vae.compile(optimizer='rmsprop', loss=vae_loss, metrics=['accuracy'])
 vae.fit(data, data, verbose='2', batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)

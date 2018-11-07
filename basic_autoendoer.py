@@ -16,6 +16,7 @@ from pprint import pprint
 import shutil, os
 '''
 RANDOMMMMMMMM
+ødmømddøm
 '''
 
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/

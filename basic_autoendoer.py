@@ -1,5 +1,5 @@
 from tensorflow.examples.tutorials.mnist import input_data
-from keras.layers import Input, Dense, Lambda
+from keras.layers import Input, Dense, Lambda, Dropout
 from keras.models import Model
 from keras.objectives import binary_crossentropy
 from keras.callbacks import LearningRateScheduler
@@ -33,7 +33,7 @@ def minmax_norm(in_data):
 def minmax_reverse(in_data, note_min, note_max):
     in_data = np.array(in_data, dtype=float)
 
-    for line in in_data:
+    for line in in_data: 
         for i in range(len(line)):
             #Reverse minmax scaling
             line[i] = int(line[i]*(note_max - note_min) + note_min) 
@@ -44,10 +44,9 @@ def minmax_reverse(in_data, note_min, note_max):
 if os.path.isdir("logs"):
     shutil.rmtree("logs")
 # Parameters
-batch_size = 10
-n_epoch = 20
-intermediate_dim1 = 10
-intermediate_dim2 = 8
+batch_size = 32
+n_epoch = 25
+intermediate_dim = 10
 latent_dim = 5
 
 # Preprocess data
@@ -61,38 +60,37 @@ original_dim = len(data[0])
 
 def sample_z(args):
     mu, log_sigma = args
-    eps = K.random_normal(shape=(latent_dim,), mean=0., stddev=1.0)
-    return mu + K.exp(log_sigma / 2) * eps  # /2 på log sigma
+    eps = K.random_normal(shape=(latent_dim,), mean=0., stddev=0.1)
+    return mu + K.exp(0.5*log_sigma) * eps 
 
 
-# Q(z|X) -- encoder
-inputs = Input(shape=(original_dim,))
-h_q = Dense(intermediate_dim1, activation='relu')(inputs)
-mu = Dense(latent_dim, activation='linear')(h_q)
-log_sigma = Dense(latent_dim, activation='linear')(h_q)
+# VAE model = encoder + decoder
+# build encoder model
+inputs = Input(shape=(original_dim,), name='encoder_input')
+x = Dense(intermediate_dim, activation='relu')(inputs)
+z_mean = Dense(latent_dim, name='z_mean')(x)
+z_log_var = Dense(latent_dim, name='z_log_var')(x)
 
-# Sample z ~ Q(z|X)
-z = Lambda(sample_z, output_shape=(latent_dim,))([mu, log_sigma])
+# use reparameterization trick to push the sampling out as input
+# note that "output_shape" isn't necessary with the TensorFlow backend
+z = Lambda(sample_z, output_shape=(latent_dim,), name='z')([z_mean, z_log_var])
 
-# P(X|z) -- decoder
-decoder_hidden = Dense(intermediate_dim1, activation='relu')
-decoder_out = Dense(original_dim, activation='sigmoid')
-h_p = decoder_hidden(z)
-outputs = decoder_out(h_p)
+# instantiate encoder model
+encoder = Model(inputs, [z_mean, z_log_var, z], name='encoder')
+encoder.summary()
 
-# Overall VAE model, for reconstruction and training
-vae = Model(inputs, outputs, name='autoencoder')
+# build decoder model
+latent_inputs = Input(shape=(latent_dim,), name='z_sampling')
+x = Dense(intermediate_dim, activation='relu')(latent_inputs)
+outputs = Dense(original_dim, activation='sigmoid')(x)
 
-# Encoder model, to encode input into latent variable
-# We use the mean as the output as it is the center point, the representative of the gaussian
-encoder = Model(inputs, mu, name='encoder')
+# instantiate decoder model
+decoder = Model(latent_inputs, outputs, name='decoder')
+decoder.summary()
 
-# Generator model, generate new data given latent variable z
-d_in = Input(shape=(latent_dim,))
-d_h = decoder_hidden(d_in)
-d_out = decoder_out(d_h)
-decoder = Model(d_in, d_out, name='decoder')
-
+# instantiate VAE model
+outputs = decoder(encoder(inputs)[2])
+vae = Model(inputs, outputs, name='vae')
 
 def vae_loss(y_true, y_pred):
     """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
@@ -103,13 +101,12 @@ def vae_loss(y_true, y_pred):
     #kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
     #kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
 
-    recon = losses.binary_crossentropy(y_true, y_pred)
-    kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
-    return recon + kl
+    recon = K.sum(losses.binary_crossentropy(y_true, y_pred))
+    kl = - 0.5 * K.sum(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
+    return K.mean(recon + kl)
 
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['acc'])
-vae.summary()
 # checkpoint
 tensorboard = TensorBoard(log_dir="logs", write_graph=True, histogram_freq=0,)
 checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_loss', save_best_only=True, mode='min')
@@ -123,7 +120,7 @@ pred = vae.predict(data[:batch_size], verbose=1, batch_size=batch_size)
 data = minmax_reverse(data, note_min, note_max)
 pred = minmax_reverse(pred, note_min, note_max)
 
-for i in range(1):
+for i in range(3):
     print("Input: %s" %(data[i]))
     print("Predicted: %s" %(pred[i]))
 

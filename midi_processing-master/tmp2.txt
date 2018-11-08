@@ -1,0 +1,20 @@
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/lbvar3.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/vdg5_rvn.mid 31
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/vdg5_rvn.mid 32
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/purcell.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/jdsancta.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/jdsancta.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/jdsancta.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/surprise.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/osolemi_.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/lbvar1.mid 1

@@ -8,6 +8,7 @@ import keras.backend as K
 import keras
 from keras.callbacks import ModelCheckpoint
 from keras.callbacks import TensorBoard
+from keras import losses
 from keras.models import load_model
 import tensorflow as tf
 import sys
@@ -20,11 +21,10 @@ keras.__version__
 tf.__version__
 # Dele the previous logs, for better tensorboard looks
 if os.path.isdir("logs"):
-    print("What")   
     shutil.rmtree("logs")
 # Parameters
-batch_size = 30
-n_epoch = 20
+batch_size = 12
+n_epoch = 5
 original_dim = 15
 intermediate_dim = 5
 latent_dim = 2
@@ -32,8 +32,8 @@ latent_dim = 2
 
 def sample_z(args):
     mu, log_sigma = args
-    eps = K.random_normal(shape=(batch_size, latent_dim), mean=0., stddev=1.0)
-    return mu + K.exp(log_sigma / 2) * eps # /2 på log sigma
+    eps = K.random_normal(shape=(latent_dim,), mean=0., stddev=1.0)
+    return mu + K.exp(log_sigma) * eps # /2 på log sigma
 
 
 # Q(z|X) -- encoder
@@ -68,12 +68,14 @@ decoder = Model(d_in, d_out, name='decoder')
 def vae_loss(y_true, y_pred):
     """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
     # E[log P(X|z)]
-    recon = K.mean(K.square(y_pred - y_true), axis=-1)
+    #recon = K.mean(K.square(y_pred - y_true), axis=-1)
     # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
-    # kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
-    # kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
-    kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
+    #kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
+    #kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
+    #kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
 
+    recon = losses.binary_crossentropy(y_true, y_pred)
+    kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
     return recon + kl
 
 
@@ -110,22 +112,19 @@ filename = sys.argv[1]
 
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int) 
-
+print(len(data))
 x = len(data)%batch_size
 data = data[:len(data)-x]
 
-
-data, note_min, note_max =  minmax_norm(data)
-
-
+data, note_min, note_max = minmax_norm(data)
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
 vae.fit(data, data, verbose=1, shuffle=True, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
-p = vae.predict(data[:30],verbose=1, batch_size=batch_size)
-data = minmax_reverse(data,note_min,note_max)
-pred = minmax_reverse(p,note_min,note_max)
+pred = vae.predict(data[:batch_size], verbose=1, batch_size=batch_size)
+data = minmax_reverse(data, note_min, note_max)
+pred = minmax_reverse(pred, note_min, note_max)
 
-for i in range(30):
+for i in range(1):
     print("Input: %s" %(data[i]))
     print("Predicted: %s" %(pred[i]))
 

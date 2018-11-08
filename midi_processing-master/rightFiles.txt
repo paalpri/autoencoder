@@ -1,0 +1,18 @@
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/6lutepcs.mid 1
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/alta.mid 3
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/hdn104_4.mid 7
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/galh.mid 1
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/galh.mid 2
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/air.mid 3
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/air.mid 6
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/cmveder.mid 8
+
+/home/primstad/student/sorted_classical_by_key/sorted_classical/D_major/tking.mid 3

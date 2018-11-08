@@ -2,7 +2,7 @@ import mido
 from mido import MidiFile, MidiTrack, Message
 import numpy as np
 import pprint
-mid = MidiFile('/home/johannes/github/in5490_AI/sorted_violin_midis/A_major/trio_IV.mid') 
+mid = MidiFile('/home/johannes/github/autoencoder/sorted_violin_midis/C_major/bach_ave-maria.mid') 
 notes = []
 velocities = []
 
@@ -11,6 +11,7 @@ def midi_to_int():
         if not msg.is_meta:
             if msg.time == 0:
                 continue
+            print(msg)
             if msg.channel == 0:
                 if msg.type == 'note_on':
                     data = msg.bytes()
@@ -26,20 +27,19 @@ def pred_to_midi(prediction):
         note = np.asarray([147, note[0], note[1]])
         bytes = note.astype(int)
         msg = Message.from_bytes(bytes[0:3])
-        t += 1
+        t += 100
         msg.time = t
         track.append(msg)
 
     mid.tracks.append(track)
     mid.save('JK.mid')
 
-midi_to_int()
 
-new_notes = []
-for i in range(127):   
-    new_notes.append(i)
-combine = [[i,j] for i,j in zip(notes, velocities)]
-#pred_to_midi(combine)
+new_notes = [4, 5, 4, 5, 4, 6, 4, 5, 5, 5, 4, 5, 5, 5, 3]
+velocities = [127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127]
+
+combine = [[i,j] for i,j in zip(new_notes, velocities[:len(new_notes)-1])]
+pred_to_midi(combine)
 
 
 '''

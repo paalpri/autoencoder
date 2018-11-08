@@ -23,16 +23,8 @@ if os.path.isdir("logs"):
     print("What")   
     shutil.rmtree("logs")
 # Parameters
-<<<<<<< HEAD
-batch_size = 32
-n_epoch = 50
-||||||| merged common ancestors
-batch_size = 64
-n_epoch = 20
-=======
 batch_size = 30
 n_epoch = 20
->>>>>>> ff68e2c7939cb9a0cb2ad5532e75a534da138371
 original_dim = 15
 intermediate_dim = 5
 latent_dim = 2
@@ -78,9 +70,7 @@ def vae_loss(y_true, y_pred):
     # E[log P(X|z)]
     recon = K.mean(K.square(y_pred - y_true), axis=-1)
     # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
-    # kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
-    # kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
-    kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
+    kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
 
     return recon + kl
 
@@ -117,37 +107,6 @@ callbacks_list = [tensorboard]
 filename = sys.argv[1]
 
 # makes a txt document into a list of arrays, one array for each line
-<<<<<<< HEAD
-data = np.genfromtxt(filename, delimiter=" ", dtype=int)
-
-data = np.array(data, dtype=float)
-note_min = np.min(data)
-note_max = np.max(data)
-
-for line in data:
-    for i in range(len(line)):
-        #minmax scaling (0-1)
-        line[i] = (line[i]- note_min)/(note_max-note_min)
-        #Reverse minmax scaling
-        #i = int(i*(note_max - note_min) + note_min) 
-
-data = data[:-(int(len(data) % batch_size))]
-test_data = data[int(len(data)*0.95):]
-print(test_data.shape)
-||||||| merged common ancestors
-data = np.genfromtxt(filename, delimiter=" ", dtype=int)
-data = np.array(data, dtype=float)
-note_min = np.min(data)
-note_max = np.max(data)
-
-for line in data:
-    for i in range(len(line)):
-        #minmax scaling (0-1)
-        line[i] = (line[i]- note_min)/(note_max-note_min)
-        #Reverse minmax scaling
-        #i = int(i*(note_max - note_min) + note_min) 
-        
-=======
 data = np.genfromtxt(filename, delimiter=" ", dtype=int) 
 
 x = len(data)%batch_size
@@ -157,21 +116,8 @@ data = data[:len(data)-x]
 data, note_min, note_max =  minmax_norm(data)
 
 
->>>>>>> ff68e2c7939cb9a0cb2ad5532e75a534da138371
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['accuracy'])
-<<<<<<< HEAD
-vae.fit(data, data, verbose=1, shuffle=True, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
-decoder.save('decoder_model.h5')
-test_data = test_data[:-(int(len(test_data) % batch_size))]
-pred = vae.predict(test_data, batch_size=batch_size)
-print(pred.shape)
-print("the predicted is: {}".format(pred[1]))
-print("The input was: {}".format(test_data[1]))
-||||||| merged common ancestors
-vae.fit(data, data, verbose=1, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
-decoder.save('decoder_model.h5')
-=======
 vae.fit(data, data, verbose=1, shuffle=True, batch_size=batch_size, epochs=n_epoch, validation_split=0.2, callbacks=callbacks_list)
 p = vae.predict(data[:30],verbose=1, batch_size=batch_size)
 data = minmax_reverse(data,note_min,note_max)
@@ -182,5 +128,4 @@ for i in range(30):
     print("Predicted: %s" %(pred[i]))
 
 #decoder.save('decoder_model.h5')
->>>>>>> ff68e2c7939cb9a0cb2ad5532e75a534da138371
 

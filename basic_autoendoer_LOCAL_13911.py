@@ -75,18 +75,11 @@ def sample_z(args):
 
 
 # Q(z|X) -- encoder
-<<<<<<< HEAD
 inputs = Input(batch_shape=(batch_size, original_dim))
 h_q1 = Dense(intermediate_dim1, activation='relu')(inputs)
 h_q2 = Dense(intermediate_dim2, activation='relu')(h_q1)
 mu = Dense(latent_dim, activation='linear')(h_q2)
 log_sigma = Dense(latent_dim, activation='linear')(h_q2)
-=======
-inputs = Input(shape=(original_dim,))
-h_q = Dense(intermediate_dim, activation='relu')(inputs)
-mu = Dense(latent_dim, activation='linear')(h_q)
-log_sigma = Dense(latent_dim, activation='linear')(h_q)
->>>>>>> fe312828326d690982c969536a578d9397ee7f04
 
 # Sample z ~ Q(z|X)
 z = Lambda(sample_z, output_shape=(latent_dim,))([mu, log_sigma])
@@ -101,7 +94,7 @@ outputs = Dense(original_dim, activation='sigmoid')(decoder_hidden2)
 
 # Overall VAE model, for reconstruction and training
 vae = Model(inputs, outputs, name='autoencoder')
-
+'''
 # Encoder model, to encode input into latent variable
 # We use the mean as the output as it is the center point, the representative of the gaussian
 encoder = Model(inputs, mu, name='encoder')
@@ -111,7 +104,7 @@ d_in = Input(shape=(latent_dim,))
 d_h = decoder_hidden(d_in)
 d_out = decoder_out(d_h)
 decoder = Model(d_in, d_out, name='decoder')
-
+'''
 
 def vae_loss(y_true, y_pred):
     """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
@@ -119,17 +112,10 @@ def vae_loss(y_true, y_pred):
     # E[log P(X|z)]
     recon = K.mean(K.square(y_pred - y_true), axis=-1)
     # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
-<<<<<<< HEAD
     kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
     '''
     recon = losses.categorical_crossentropy(y_true, y_pred)
     kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
-=======
-    # kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
-    # kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
-    kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
-
->>>>>>> fe312828326d690982c969536a578d9397ee7f04
     return recon + kl
 
 

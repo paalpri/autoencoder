@@ -53,3 +53,26 @@ for line in data:
         #Reverse minmax scaling
         i = int(i*(note_max - note_min) + note_min)
 '''
+
+'''
+def minmax_norm(in_data):
+    in_data = np.array(in_data, dtype=float)
+    note_min = np.min(in_data)
+    note_max = np.max(in_data)
+
+    for line in in_data:
+        for i in range(len(line)):
+            #minmax scaling (0-1)
+            line[i] = (line[i]- note_min)/(note_max-note_min)
+    return in_data, note_min, note_max
+
+
+def minmax_reverse(in_data, note_min, note_max):
+    in_data = np.array(in_data, dtype=float)
+
+    for line in in_data: 
+        for i in range(len(line)):
+            #Reverse minmax scaling
+            line[i] = int(line[i]*(note_max - note_min) + note_min) 
+    return in_data
+'''

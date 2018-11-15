@@ -22,6 +22,20 @@ import shutil, os
 # Delete the previous logs, for better tensorboard looks
 if os.path.isdir("logs"):
     shutil.rmtree("logs")
+<<<<<<< HEAD
+# Parameters
+batch_size = 32
+n_epoch = 20000
+intermediate_dim = 10
+latent_dim = 5
+||||||| merged common ancestors
+# Parameters
+batch_size = 32
+n_epoch = 25
+intermediate_dim = 10
+latent_dim = 5
+=======
+>>>>>>> 26cb13f5767efc77fb176512f06fba4aa1d50496
 
 # Preprocess data
 filename = sys.argv[1]
@@ -97,6 +111,40 @@ decoder.summary()
 outputs = decoder(encoder(inputs)[2])
 vae = Model(inputs, outputs, name='vae')
 
+<<<<<<< HEAD
+def vae_loss(y_true, y_pred):
+    """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
+    # E[log P(X|z)]
+    #recon = K.mean(K.square(y_pred - y_true), axis=-1)
+    # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussianx
+    #kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
+    #kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
+    #kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
+
+    recon = K.sum(losses.binary_crossentropy(y_true, y_pred))
+    kl = - 0.5 * K.sum(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
+    return recon + kl
+
+
+vae.compile(optimizer='adam', loss=vae_loss, metrics=['acc'])
+||||||| merged common ancestors
+def vae_loss(y_true, y_pred):
+    """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
+    # E[log P(X|z)]
+    #recon = K.mean(K.square(y_pred - y_true), axis=-1)
+    # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
+    #kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
+    #kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
+    #kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
+
+    recon = K.sum(losses.binary_crossentropy(y_true, y_pred))
+    kl = - 0.5 * K.sum(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
+    return K.mean(recon + kl)
+
+
+vae.compile(optimizer='adam', loss=vae_loss, metrics=['acc'])
+=======
+>>>>>>> 26cb13f5767efc77fb176512f06fba4aa1d50496
 # checkpoint
 tensorboard = TensorBoard(log_dir="logs", write_graph=True, histogram_freq=0,)
 checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_loss', save_best_only=True, mode='min')

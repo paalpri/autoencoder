@@ -6,6 +6,7 @@ from keras.models import Model
 from keras.objectives import binary_crossentropy
 from keras.callbacks import LearningRateScheduler
 import numpy as np
+import matplotlib.pyplot as plt
 import keras.backend as K
 from keras import losses, optimizers
 from keras.callbacks import ModelCheckpoint
@@ -16,6 +17,7 @@ import sys
 import random
 from pprint import pprint
 import shutil, os
+import pickle
 
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 
@@ -35,10 +37,11 @@ data_one = to_categorical(data)
 batch_size = int(sys.argv[2])
 epochs = int(sys.argv[3])
 learning_rate = float(sys.argv[4])
+latent_scale = float(sys.argv[5])
 original_dim1, original_dim2 = np.shape(data_one[0])
 org = int(original_dim1*original_dim2)
 intermediate_dim = int(org*0.5)
-latent_dim = int(org*0.2)
+latent_dim = int(org*latent_scale)
 K.set_epsilon(1e-05)
 
 
@@ -106,12 +109,33 @@ checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_loss', save_b
 callbacks_list = [tensorboard]
 
 Adam = optimizers.Adam(lr=learning_rate)
-vae.compile(optimizer=Adam, loss=vae_loss, metrics=['accuracy'])
+vae.compile(optimizer=Adam, loss=vae_loss, metrics=['acc'])
 #Start training
-vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_size, epochs=epochs, validation_split=0.2, callbacks=callbacks_list)
+history = vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_size, epochs=epochs, validation_split=0.2, callbacks=callbacks_list)
 
 pred = vae.predict(data_one[:batch_size], verbose=1, batch_size=batch_size)
 
+
+pickle.dump(history.history, open( "histories/history_inputS{}_LS{}".format(original_dim1,latent_scale), "wb+" ) )
+
+#history1 = pickle.load( open( "trainHistoryDict", "rb" ) )
+
+# summarize history for accuracy
+plt.plot(history1['acc'])
+plt.plot(history1['val_acc'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()
+# summarize history for loss
+plt.plot(history1['loss'])
+plt.plot(history1['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()
 
 res = []
 print(np.shape(pred[0]))
@@ -122,8 +146,8 @@ for i in (pred):
     res.append(song)
 
 for i in range(3):
-    print("Input: %s" %(data[i]))
-    print("Predicted: %s" %(res[i]))
+    print("Input:\n %60s" %(data[i]))
+    print("Predicted:\n %60s" %(res[i]))
 
 decoder.save('decoder_model.h5')
 

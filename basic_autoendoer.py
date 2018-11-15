@@ -45,7 +45,7 @@ if os.path.isdir("logs"):
     shutil.rmtree("logs")
 # Parameters
 batch_size = 32
-n_epoch = 25
+n_epoch = 20000
 intermediate_dim = 10
 latent_dim = 5
 
@@ -96,14 +96,14 @@ def vae_loss(y_true, y_pred):
     """ Calculate loss = reconstruction loss + KL loss for each data in minibatch """
     # E[log P(X|z)]
     #recon = K.mean(K.square(y_pred - y_true), axis=-1)
-    # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
+    # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussianx
     #kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
     #kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
     #kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
 
     recon = K.sum(losses.binary_crossentropy(y_true, y_pred))
     kl = - 0.5 * K.sum(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
-    return K.mean(recon + kl)
+    return recon + kl
 
 
 vae.compile(optimizer='adam', loss=vae_loss, metrics=['acc'])

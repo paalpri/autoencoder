@@ -1,0 +1,240 @@
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Purcell_Prelude.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Purcell_Prelude.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Tarrega_Ave_Maria.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sor_Piece_de_chasse.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Giuliani_Sonata_Op85_2-Andante_Molto_Sostenuto.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Barrios_Mangore_Punto_Guanacasteco.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_Arie_aus_Cenerentola_von_Rossini2.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_Arie_aus_Cenerentola_von_Rossini2.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_Arie_aus_Cenerentola_von_Rossini2.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_Arie_aus_Cenerentola_von_Rossini2.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/PujolM_Imagenes_Abril_Semana_Santa.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No16_Allemande.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No22_Aria.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No16_Courante.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No16_Courante.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Mertz_Landler.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carulli_Prelude11.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_Prelude5_Clavier_tempere1.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Pellegrini_Balleto.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No22_Rondeau_Echo.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Anonym_lute.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Anonym_lute.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Giuliani_Lis_Op46.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Cardoso_Samba_Ouro.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Barrios_Mangore_Pais_Ed.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Barrios_Mangore_Pais_Ed.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Mozart_Andante.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sanz_Suite_de_Antiguas_Danzas_EspanolasV_Paradetas.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sanz_Suite_de_Antiguas_Danzas_EspanolasV_Paradetas.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Barrios_Mangore_Valse_No1.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Tarrega_Rosita.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Tarrega_Rosita.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_BWV1004_Violin_Solo_Chaconne.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_BWV1004_Violin_Solo_Chaconne.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Gavotte2.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Granados_Dedicatoria.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Granados_Dedicatoria.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Granados_Dedicatoria.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No16_Prelude.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No16_Prelude.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Dyens_Tango_en_Skai_Ed.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Brouwer_Berceuse_Cancion_de_Cuna.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Brouwer_Berceuse_Cancion_de_Cuna.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Oliva_Hechizo_de_las_Sirenas.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Oliva_Hechizo_de_las_Sirenas.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Oliva_Hechizo_de_las_Sirenas.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sor_Marche_Cendrillon.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_French_Suite_No5_BWV816_Gigue.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_French_Suite_No5_BWV816_Gigue.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_French_Suite_No5_BWV816_Gigue.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Ponce_Prelude_No10.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Ponce_Prelude_No10.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Mudarra_Pavana_Alexandre.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Mudarra_Pavana_Alexandre.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Giuliani_Etude_No3_Op48.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sojo_Venezuela_4_Aire_Venezolano.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sojo_Venezuela_4_Aire_Venezolano.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sojo_Venezuela_4_Aire_Venezolano.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sojo_Venezuela_4_Aire_Venezolano.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Giuliani_Rondoletto_Op4.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No16_Sarabande.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_SonatinaII_Op1_Rondo.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_SonatinaII_Op1_Rondo.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/PujolM_Etude_No9.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/PujolM_Etude_No9.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Villa-Lobos_Samba_LeLe.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sojo_Venezuela_2_Aguinaldo.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sojo_Venezuela_2_Aguinaldo.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sojo_Venezuela_2_Aguinaldo.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Coste_Grand_Caprice_Op11.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Handel_Air_HWV787.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Handel_Air_HWV787.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Giuliani_Etude_No11_Op48.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Handel_Water_Music_Air_No5.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/LeRoy_Branle1.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Vivaldi_Concerto_D-major_3Allegro.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Vivaldi_Concerto_D-major_3Allegro.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sanz_Suite_de_Antiguas_Danzas_EspanolasIV_Rujero.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Sor_Andante_Op44_No16.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Villa-Lobos_Gavota-Choro_Ed.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Gnattali_Choro.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Barrios_Mangore_Danza_ParaguayaNo1_Galopa_Ed.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Tarrega_Estudio_Inspirado.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Tarrega_Estudio_Inspirado.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_Prelude15_Clavier_tempere2.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Bach_Prelude15_Clavier_tempere2.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Granados_Carta_Amor_No1.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Granados_Carta_Amor_No1.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Granados_Carta_Amor_No1.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Brouwer_Guajira_Criollo.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Mozart_Ave_Verum_Corpus_K618.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Passacaille.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Coste_Etude_Op38_No10.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Coste_Etude_Op38_No10.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Coste_Etude_Op38_No10.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Murcia_Baylad_Caracoles.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carulli_Rondo_Op5.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Albeniz_Suite_Espana_op165_Zortzico.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/PujolM_Sonatine_3_Allegro.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/PujolM_Sonatine_3_Allegro.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Pernambuco_Interrogando.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Mertz_Part_Diable.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Vivaldi_Concerto_D-major_1Allegro.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_SonatinaII_Op1_Larghetto.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_SonatinaII_Op1_Larghetto.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/LeRoy_Branle2.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Capriccio.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Capriccio.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Schumann_Traumerei.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Schumann_Berceuse.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No22_Comment.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No22_Comment.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Coste_Etude_Op38_No20.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Coste_Etude_Op38_No20.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Coste_Etude_Op38_No20.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Carcassi_Caprice_Op26_No5.mid 0
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No22_Menuet.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Weiss_Suite_No22_Menuet.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Molino_Prelude_No5.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_guitar/D_major/Molino_Prelude_No5.mid 2

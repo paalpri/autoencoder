@@ -68,7 +68,6 @@ def vae_loss(y_true, y_pred):
 inputs = Input(shape=(original_dim1, original_dim2, ), name='encoder_input')
 x = Flatten()(inputs)
 x = Dense(intermediate_dim, activation='relu')(x)
-#x = Dropout(0.2)(x)
 x = Dense(intermediate_dim, activation='relu')(x)
 z_mean = Dense(latent_dim, name='z_mean')(x)
 z_log_var = Dense(latent_dim, name='z_log_var')(x)
@@ -84,7 +83,6 @@ encoder.summary()
 # build decoder model
 latent_inputs = Input(shape=(latent_dim,), name='z_sampling')
 x = Dense(intermediate_dim, activation='relu')(latent_inputs)
-#x = Dropout(0.2)(x)
 x = Dense(intermediate_dim, activation='relu')(x)
 x = Dense(org, activation='softmax')(x)
 outputs = Reshape((original_dim1, original_dim2))(x)
@@ -103,7 +101,7 @@ checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_loss', save_b
 callbacks_list = [tensorboard]
 
 Adam = optimizers.Adam(lr=learning_rate)
-vae.compile(optimizer=Adam, loss='categorical_crossentropy', metrics=['accuracy'])
+vae.compile(optimizer=Adam, loss=vae_loss, metrics=['accuracy'])
 #Start training
 vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_size, epochs=epochs, validation_split=0.2, callbacks=callbacks_list)
 

@@ -55,11 +55,14 @@ def vae_loss(y_true, y_pred):
     # D_KL(Q(z|X) || P(z|X)); calculate in closed form as both dist. are Gaussian
     #kl = 0.5 * K.sum(K.exp(log_sigma) + K.square(mu) - 1. - log_sigma, axis=1)
     #kl = - 0.5 * K.mean(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=-1)
-    #kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1)
+    #kl = - 0.5 * K.sum(1 + log_sigma - K.square(mu) - K.exp(log_sigma), axis=1 )
+
+    y_pred = K.clip(y_pred,1e-05,50)
 
     recon = K.sum(losses.categorical_crossentropy(y_true, y_pred))
 
     kl = - 0.5 * K.sum(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
+
     return K.mean(recon + kl)
 
 
@@ -67,9 +70,9 @@ def vae_loss(y_true, y_pred):
 # build encoder model
 inputs = Input(shape=(original_dim1, original_dim2, ), name='encoder_input')
 x = Flatten()(inputs)
-x = Dense(intermediate_dim, activation='relu')(x)
+x = Dense(intermediate_dim, activation='softplus')(x)
 #x = Dropout(0.2)(x)
-x = Dense(intermediate_dim, activation='relu')(x)
+x = Dense(intermediate_dim, activation='softplus')(x)
 z_mean = Dense(latent_dim, name='z_mean')(x)
 z_log_var = Dense(latent_dim, name='z_log_var')(x)
 
@@ -83,9 +86,9 @@ encoder.summary()
 
 # build decoder model
 latent_inputs = Input(shape=(latent_dim,), name='z_sampling')
-x = Dense(intermediate_dim, activation='relu')(latent_inputs)
+x = Dense(intermediate_dim, activation='softplus')(latent_inputs)
 #x = Dropout(0.2)(x)
-x = Dense(intermediate_dim, activation='relu')(x)
+x = Dense(intermediate_dim, activation='softplus')(x)
 x = Dense(org, activation='softmax')(x)
 outputs = Reshape((original_dim1, original_dim2))(x)
 
@@ -103,7 +106,7 @@ checkpoint = ModelCheckpoint('training_weights.hdf5', monitor='val_loss', save_b
 callbacks_list = [tensorboard]
 
 Adam = optimizers.Adam(lr=learning_rate)
-vae.compile(optimizer=Adam, loss='categorical_crossentropy', metrics=['accuracy'])
+vae.compile(optimizer=Adam, loss=vae_loss, metrics=['accuracy'])
 #Start training
 vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_size, epochs=epochs, validation_split=0.2, callbacks=callbacks_list)
 

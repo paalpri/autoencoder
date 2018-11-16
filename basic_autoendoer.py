@@ -29,8 +29,7 @@ filename = sys.argv[1]
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int)
 data = data[:- (len(data) % int(sys.argv[2]))]
-#data, note_min, note_max = minmax_norm(data)
-data_one = to_categorical(data)
+data_one = to_categorical(data) #One-hot encoding
 
 # Parameters
 batch_size = int(sys.argv[2])
@@ -109,6 +108,8 @@ callbacks_list = [tensorboard]
 
 Adam = optimizers.Adam(lr=learning_rate)
 vae.compile(optimizer=Adam, loss=vae_loss, metrics=['acc'])
+encoder.compile(optimizer=Adam, loss=vae_loss, metrics=['acc'])
+decoder.compile(optimizer=Adam, loss=vae_loss, metrics=['acc'])
 #Start training
 history = vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_size, epochs=epochs, validation_split=0.2, callbacks=callbacks_list)
 
@@ -129,5 +130,6 @@ for i in range(3):
     print("Input:\n %60s" %(data[i]))
     print("Predicted:\n %60s" %(res[i]))
 
-decoder.save('decoder_model.h5')
+decoder.save('saved_models/decoder_model.h5',include_optimizer=False)
+encoder.save('saved_models/encoder_model.h5',include_optimizer=False)
 

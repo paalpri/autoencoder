@@ -6,7 +6,6 @@ from keras.models import Model
 from keras.objectives import binary_crossentropy
 from keras.callbacks import LearningRateScheduler
 import numpy as np
-import matplotlib.pyplot as plt
 import keras.backend as K
 from keras import losses, optimizers
 from keras.callbacks import ModelCheckpoint
@@ -116,26 +115,7 @@ history = vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_
 pred = vae.predict(data_one[:batch_size], verbose=1, batch_size=batch_size)
 
 
-pickle.dump(history.history, open( "histories/history_inputS{}_LS{}".format(original_dim1,latent_scale), "wb+" ) )
-
-#history1 = pickle.load( open( "trainHistoryDict", "rb" ) )
-
-# summarize history for accuracy
-plt.plot(history1['acc'])
-plt.plot(history1['val_acc'])
-plt.title('model accuracy')
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.show()
-# summarize history for loss
-plt.plot(history1['loss'])
-plt.plot(history1['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.show()
+pickle.dump(history.history, open( "histories/history_inputS{}_LS{}".format(original_dim1,int(latent_scale*10)), "wb+" ) )
 
 res = []
 print(np.shape(pred[0]))

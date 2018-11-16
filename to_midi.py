@@ -2,6 +2,7 @@ import mido
 from mido import MidiFile, MidiTrack, Message
 import numpy as np
 import pprint
+'''
 mid = MidiFile('/home/johannes/github/autoencoder/sorted_violin_midis/C_major/bach_ave-maria.mid') 
 notes = []
 velocities = []
@@ -32,17 +33,34 @@ def pred_to_midi(prediction):
         track.append(msg)
 
     mid.tracks.append(track)
-    mid.save('JK.mid')
+    mid.save('INPUT.mid')
+'''
+from midiutil import MIDIFile
 
+degrees  = [10,2,3,5,10,2,10,0,10,0,3,0,10,2,0,10]  # MIDI note number
+track    = 0
+channel  = 0
+time     = 0    # In beats
+duration = 1    # In beats
+tempo    = 60   # In BPM
+volume   = 100  # 0-127, as per the MIDI standard
 
-new_notes = [4, 5, 4, 5, 4, 6, 4, 5, 5, 5, 4, 5, 5, 5, 3]
-velocities = [127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127]
+MyMIDI = MIDIFile(1)  # One track, defaults to format 1 (tempo track is created
+                      # automatically)
+MyMIDI.addTempo(track, time, tempo)
 
-combine = [[i,j] for i,j in zip(new_notes, velocities[:len(new_notes)-1])]
+for i, pitch in enumerate(degrees):
+    MyMIDI.addNote(track, channel, pitch, time + i, duration, volume)
+
+with open("major-scale.mid", "wb") as output_file:
+    MyMIDI.writeFile(output_file)
+'''
+new_notes = [10, 2, 3, 5, 10, 2, 10, 0, 10, 0, 3, 0, 10, 2, 0, 10, 2, 2, 0, 10, 5, 2, 0, 10, 5, 3, 2, 3, 0, 10, 10, 2]
+velocities = [90]*len(new_notes)
+
+combine = [[i,j] for i,j in zip(new_notes, velocities)]
 pred_to_midi(combine)
 
-
-'''
 note_min = np.min(notes)
 note_max = np.max(notes)
 

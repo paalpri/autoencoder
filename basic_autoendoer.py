@@ -71,9 +71,9 @@ def vae_loss(y_true, y_pred):
 # build encoder model
 inputs = Input(shape=(original_dim1, original_dim2, ), name='encoder_input')
 x = Flatten()(inputs)
-x = Dense(intermediate_dim, activation='softplus')(x)
+x = Dense(intermediate_dim, activation='relu')(x)
 #x = Dropout(0.2)(x)
-x = Dense(intermediate_dim, activation='softplus')(x)
+x = Dense(intermediate_dim, activation='relu')(x)
 z_mean = Dense(latent_dim, name='z_mean')(x)
 z_log_var = Dense(latent_dim, name='z_log_var')(x)
 
@@ -87,9 +87,9 @@ encoder.summary()
 
 # build decoder model
 latent_inputs = Input(shape=(latent_dim,), name='z_sampling')
-x = Dense(intermediate_dim, activation='softplus')(latent_inputs)
+x = Dense(intermediate_dim, activation='relu')(latent_inputs)
 #x = Dropout(0.2)(x)
-x = Dense(intermediate_dim, activation='softplus')(x)
+x = Dense(intermediate_dim, activation='relu')(x)
 x = Dense(org, activation='softmax')(x)
 outputs = Reshape((original_dim1, original_dim2))(x)
 
@@ -116,7 +116,7 @@ history = vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_
 pred = vae.predict(data_one[:batch_size], verbose=1, batch_size=batch_size)
 
 
-pickle.dump(history.history, open( "histories/history_inputS{}_LS{}".format(original_dim1,int(latent_scale*10)), "wb+" ) )
+#pickle.dump(history.history, open( "histories/history_inputS{}_LS{}".format(original_dim1,int(latent_scale*10)), "wb+" ) )
 
 res = []
 print(np.shape(pred[0]))

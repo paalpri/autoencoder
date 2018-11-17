@@ -31,6 +31,8 @@ data = np.genfromtxt(filename, delimiter=" ", dtype=int)
 data = data[:- (len(data) % int(sys.argv[2]))]
 data_one = to_categorical(data) #One-hot encoding
 
+print(np.shape(data_one))
+
 # Parameters
 batch_size = int(sys.argv[2])
 epochs = int(sys.argv[3])
@@ -101,20 +103,34 @@ decoder.summary()
 outputs = decoder(encoder(inputs)[2])
 vae = Model(inputs, outputs, name='vae')
 
-encoder = load_model('saved_models/encoder_model.h5', {'latent_dim':latent_dim, 'vae_loss':vae_loss})
-decoder = load_model('saved_models/decoder_model.h5', {'latent_dim':latent_dim, 'vae_loss':vae_loss})
+encoder = load_model('saved_models/encoder_model.h5', {'latent_dim':latent_dim, 'vae_loss':vae_loss}, compile=False)
+decoder = load_model('saved_models/decoder_model.h5', {'latent_dim':latent_dim, 'vae_loss':vae_loss}, compile=False)
 
-latent_var = encoder.predict(data_one[:batch_size])
+latent_var = encoder.predict(data_one[:1], batch_size=1)
 
-print(latent_var[0])
+print(np.shape(latent_var))
+print((latent_var[2]))
 
-generation = decoder.predict(latent_var)
+tweeked = np.copy(latent_var[2])
 
-res = []
-for i in (generation):
-    song = []
-    for x in i:
-        song.append(np.argmax(x))
-    res.append(song)
+tweeked[0][0] = tweeked[0][0]*100
+print(tweeked)
 
-print(res[0])
+reproduction = decoder.predict(latent_var[2], batch_size=1)
+
+generation = decoder.predict(tweeked, batch_size=1)
+
+
+res_r = []
+res_g = []
+for i,j in zip(reproduction,generation):
+    song_r = []
+    song_g = []
+    for x,y in zip(i,j):
+        song_r.append(np.argmax(x))
+        song_g.append(np.argmax(y))
+    res_r.append(song_r)
+    res_g.append(song_g)
+print(data[0])
+print(res_r)
+print(res_g)

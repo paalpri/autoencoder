@@ -37,7 +37,9 @@ def pred_to_midi(prediction):
 '''
 from midiutil import MIDIFile
 
-degrees  = [10, 2, 3, 5, 10, 2, 10, 0, 10, 0, 2, 0, 10, 2, 0, 10]  # MIDI note number
+degrees  = [10, 2, 3, 5, 10, 2, 10, 0, 10, 0, 2, 0, 10, 2, 0, 10]  # MIDI note 
+degrees  = [x+32 for x in degrees]
+print(degrees)
 track    = 0
 channel  = 0
 time     = 0    # In beats

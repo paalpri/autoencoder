@@ -1,0 +1,505 @@
+../autoencoder/sorted_midis/D_major/Concerto for Piano n1 op15 2mov.mid 9
+../autoencoder/sorted_midis/D_major/Concerto for Piano n1 op15 2mov.mid 10
+../autoencoder/sorted_midis/D_major/Concerto for Piano n1 op15 2mov.mid 13
+../autoencoder/sorted_midis/D_major/Concerto for Piano n1 op15 2mov.mid 14
+../autoencoder/sorted_midis/D_major/rejou.mid 10
+../autoencoder/sorted_midis/D_major/mesiah16.mid 6
+../autoencoder/sorted_midis/D_major/mesiah16.mid 7
+../autoencoder/sorted_midis/D_major/mesiah16.mid 8
+../autoencoder/sorted_midis/D_major/mesiah16.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n2 op73 4mov.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n2 op73 4mov.mid 13
+../autoencoder/sorted_midis/D_major/Symphony n2 op73 4mov.mid 15
+../autoencoder/sorted_midis/D_major/Symphony n2 op73 4mov.mid 16
+../autoencoder/sorted_midis/D_major/Rodrigo_Fantasia_para_un_Gentilhombre-4-Canarios.mid 6
+../autoencoder/sorted_midis/D_major/Rodrigo_Fantasia_para_un_Gentilhombre-4-Canarios.mid 7
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 3mov.mid 17
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 3mov.mid 18
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 3mov.mid 19
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 3mov.mid 20
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 3mov.mid 21
+../autoencoder/sorted_midis/D_major/Symphony n96 1mov ''Miracle''.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n96 1mov ''Miracle''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n96 1mov ''Miracle''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n96 1mov ''Miracle''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n96 1mov ''Miracle''.mid 11
+../autoencoder/sorted_midis/D_major/hayln12.mid 6
+../autoencoder/sorted_midis/D_major/K136 Divertimento 3mov.mid 7
+../autoencoder/sorted_midis/D_major/K136 Divertimento 3mov.mid 8
+../autoencoder/sorted_midis/D_major/K136 Divertimento 3mov.mid 9
+../autoencoder/sorted_midis/D_major/K136 Divertimento 3mov.mid 10
+../autoencoder/sorted_midis/D_major/mesiah09.mid 12
+../autoencoder/sorted_midis/D_major/mesiah09.mid 13
+../autoencoder/sorted_midis/D_major/mesiah09.mid 14
+../autoencoder/sorted_midis/D_major/mesiah09.mid 15
+../autoencoder/sorted_midis/D_major/23. Donna Nobis Pacem .mid 1
+../autoencoder/sorted_midis/D_major/23. Donna Nobis Pacem .mid 6
+../autoencoder/sorted_midis/D_major/23. Donna Nobis Pacem .mid 7
+../autoencoder/sorted_midis/D_major/23. Donna Nobis Pacem .mid 8
+../autoencoder/sorted_midis/D_major/23. Donna Nobis Pacem .mid 9
+../autoencoder/sorted_midis/D_major/Hwv063 Judas Maccabeus 58 Chorus.mid 5
+../autoencoder/sorted_midis/D_major/Hwv063 Judas Maccabeus 58 Chorus.mid 6
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 4mov La rejouissance.mid 17
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 4mov La rejouissance.mid 18
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 4mov La rejouissance.mid 19
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 4mov La rejouissance.mid 20
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 4mov La rejouissance.mid 21
+../autoencoder/sorted_midis/D_major/Heroic-Deeds.mid 11
+../autoencoder/sorted_midis/D_major/Heroic-Deeds.mid 12
+../autoencoder/sorted_midis/D_major/Heroic-Deeds.mid 13
+../autoencoder/sorted_midis/D_major/Heroic-Deeds.mid 14
+../autoencoder/sorted_midis/D_major/Heroic-Deeds.mid 15
+../autoencoder/sorted_midis/D_major/Heroic-Deeds.mid 16
+../autoencoder/sorted_midis/D_major/Heroic-Deeds.mid 17
+../autoencoder/sorted_midis/D_major/Water Music 6mov Alla Hornpipe.mid 18
+../autoencoder/sorted_midis/D_major/Water Music 6mov Alla Hornpipe.mid 19
+../autoencoder/sorted_midis/D_major/Water Music 6mov Alla Hornpipe.mid 20
+../autoencoder/sorted_midis/D_major/Water Music 6mov Alla Hornpipe.mid 21
+../autoencoder/sorted_midis/D_major/victory6.mid 4
+../autoencoder/sorted_midis/D_major/victory6.mid 5
+../autoencoder/sorted_midis/D_major/victory6.mid 7
+../autoencoder/sorted_midis/D_major/victory6.mid 9
+../autoencoder/sorted_midis/D_major/Hwv258 Coronation Anthem n1 ''Zadok the Priest''.mid 16
+../autoencoder/sorted_midis/D_major/Hwv258 Coronation Anthem n1 ''Zadok the Priest''.mid 17
+../autoencoder/sorted_midis/D_major/Hwv258 Coronation Anthem n1 ''Zadok the Priest''.mid 18
+../autoencoder/sorted_midis/D_major/Concerto Grosso op6 n10 6mov.mid 3
+../autoencoder/sorted_midis/D_major/Concerto Grosso op6 n10 6mov.mid 4
+../autoencoder/sorted_midis/D_major/wtrmusic.mid 8
+../autoencoder/sorted_midis/D_major/wtrmusic.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n104 3mov ''London''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n104 3mov ''London''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n104 3mov ''London''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n104 3mov ''London''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n104 3mov ''London''.mid 12
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 2mov Allegro.mid 3
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 2mov Allegro.mid 4
+../autoencoder/sorted_midis/D_major/Celtic-Romance-Arranged.mid 6
+../autoencoder/sorted_midis/D_major/Celtic-Romance-Arranged.mid 7
+../autoencoder/sorted_midis/D_major/Celtic-Romance-Arranged.mid 8
+../autoencoder/sorted_midis/D_major/Celtic-Romance-Arranged.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n31 K297 3mov ''Paris''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n31 K297 3mov ''Paris''.mid 11
+../autoencoder/sorted_midis/D_major/bjsbmm06.mid 6
+../autoencoder/sorted_midis/D_major/bjsbmm06.mid 7
+../autoencoder/sorted_midis/D_major/bjsbmm06.mid 8
+../autoencoder/sorted_midis/D_major/bjsbmm06.mid 9
+../autoencoder/sorted_midis/D_major/ba_bran5.mid 2
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 3mov ''Haffner''.mid 6
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 3mov ''Haffner''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 3mov ''Haffner''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n29 K201 2mov.mid 3
+../autoencoder/sorted_midis/D_major/Symphony n29 K201 2mov.mid 4
+../autoencoder/sorted_midis/D_major/Symphony n29 K201 2mov.mid 5
+../autoencoder/sorted_midis/D_major/Symphony n29 K201 2mov.mid 6
+../autoencoder/sorted_midis/D_major/Symphony n29 K201 2mov.mid 7
+../autoencoder/sorted_midis/D_major/Vivaldi_Concerto_D-major_3Allegro.mid 4
+../autoencoder/sorted_midis/D_major/Symphony n96 4mov ''Miracle''.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n96 4mov ''Miracle''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n96 4mov ''Miracle''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n96 4mov ''Miracle''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n96 4mov ''Miracle''.mid 11
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 2mov.mid 3
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 2mov.mid 5
+../autoencoder/sorted_midis/D_major/pachbel.mid 4
+../autoencoder/sorted_midis/D_major/Symphony op125 n9 4mov ''Choral''.mid 27
+../autoencoder/sorted_midis/D_major/Symphony op125 n9 4mov ''Choral''.mid 28
+../autoencoder/sorted_midis/D_major/Symphony op125 n9 4mov ''Choral''.mid 30
+../autoencoder/sorted_midis/D_major/Symphony op125 n9 4mov ''Choral''.mid 31
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 5mov.mid 5
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 5mov.mid 6
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 5mov.mid 7
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 5mov.mid 8
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 5mov.mid 9
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 5mov.mid 10
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 1mov.mid 11
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 1mov.mid 12
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 1mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 1mov.mid 14
+../autoencoder/sorted_midis/D_major/K136 Divertimento 1mov.mid 9
+../autoencoder/sorted_midis/D_major/K136 Divertimento 1mov.mid 10
+../autoencoder/sorted_midis/D_major/16. Et Ressurexit.mid 6
+../autoencoder/sorted_midis/D_major/16. Et Ressurexit.mid 7
+../autoencoder/sorted_midis/D_major/16. Et Ressurexit.mid 8
+../autoencoder/sorted_midis/D_major/16. Et Ressurexit.mid 9
+../autoencoder/sorted_midis/D_major/Mozart_Ave_Verum_Corpus_K618.mid 1
+../autoencoder/sorted_midis/D_major/Mozart_Ave_Verum_Corpus_K618.mid 2
+../autoencoder/sorted_midis/D_major/Concerto op3 n03 for Violin RV310 3mov.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op3 n03 for Violin RV310 3mov.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 1mov ''Haffner''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 1mov ''Haffner''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 1mov ''Haffner''.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 1mov ''Haffner''.mid 13
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 6mov Menuet 1y2.mid 1
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 6mov Menuet 1y2.mid 5
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 6mov Menuet 1y2.mid 9
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 6mov Menuet 1y2.mid 10
+../autoencoder/sorted_midis/D_major/wtrmsic.mid 8
+../autoencoder/sorted_midis/D_major/wtrmsic.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 3mov.mid 5
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 3mov.mid 6
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 3mov.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 3mov.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 3mov.mid 9
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 3mov.mid 11
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 3mov.mid 12
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 3mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 3mov.mid 14
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 2mov.mid 5
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 2mov.mid 6
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 2mov.mid 7
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 2mov.mid 8
+../autoencoder/sorted_midis/D_major/Concerto Grosso op6 n01 2mov.mid 3
+../autoencoder/sorted_midis/D_major/Concerto Grosso op6 n01 2mov.mid 4
+../autoencoder/sorted_midis/D_major/K626 Requiem 10 Sanctus.mid 8
+../autoencoder/sorted_midis/D_major/K626 Requiem 10 Sanctus.mid 9
+../autoencoder/sorted_midis/D_major/K626 Requiem 10 Sanctus.mid 10
+../autoencoder/sorted_midis/D_major/K626 Requiem 10 Sanctus.mid 11
+../autoencoder/sorted_midis/D_major/K626 Requiem 10 Sanctus.mid 12
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 3mov.mid 8
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 3mov.mid 9
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 3mov.mid 10
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 3mov.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 3mov.mid 12
+../autoencoder/sorted_midis/D_major/K527 Overture ''Don Giovanni''.mid 8
+../autoencoder/sorted_midis/D_major/K527 Overture ''Don Giovanni''.mid 10
+../autoencoder/sorted_midis/D_major/K527 Overture ''Don Giovanni''.mid 11
+../autoencoder/sorted_midis/D_major/K527 Overture ''Don Giovanni''.mid 12
+../autoencoder/sorted_midis/D_major/barcarol.mid 9
+../autoencoder/sorted_midis/D_major/mesiah17.mid 13
+../autoencoder/sorted_midis/D_major/mesiah17.mid 14
+../autoencoder/sorted_midis/D_major/mesiah17.mid 15
+../autoencoder/sorted_midis/D_major/mesiah17.mid 16
+../autoencoder/sorted_midis/D_major/Symphony n96 3mov ''Miracle''.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n96 3mov ''Miracle''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n96 3mov ''Miracle''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n96 3mov ''Miracle''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n96 3mov ''Miracle''.mid 11
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 5mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 5mov.mid 14
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 5mov.mid 15
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 5mov.mid 16
+../autoencoder/sorted_midis/D_major/schumn44.mid 15
+../autoencoder/sorted_midis/D_major/schumn44.mid 16
+../autoencoder/sorted_midis/D_major/sib2-2.mid 25
+../autoencoder/sorted_midis/D_major/sib2-2.mid 26
+../autoencoder/sorted_midis/D_major/sib2-2.mid 31
+../autoencoder/sorted_midis/D_major/Symphony n4 K19 3mov.mid 3
+../autoencoder/sorted_midis/D_major/Symphony n4 K19 3mov.mid 4
+../autoencoder/sorted_midis/D_major/Symphony n4 K19 3mov.mid 5
+../autoencoder/sorted_midis/D_major/Symphony n4 K19 3mov.mid 6
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 1mov.mid 6
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 1mov.mid 7
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 1mov.mid 8
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 1mov.mid 9
+../autoencoder/sorted_midis/D_major/mesiah48.mid 8
+../autoencoder/sorted_midis/D_major/mesiah48.mid 9
+../autoencoder/sorted_midis/D_major/mesiah48.mid 10
+../autoencoder/sorted_midis/D_major/mesiah48.mid 11
+../autoencoder/sorted_midis/D_major/bjsgig.mid 8
+../autoencoder/sorted_midis/D_major/bjsgig.mid 9
+../autoencoder/sorted_midis/D_major/bjsgig.mid 10
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 1mov ''Coronation''.mid 9
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 1mov ''Coronation''.mid 10
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 1mov ''Coronation''.mid 11
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 1mov ''Coronation''.mid 12
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 1mov ''Coronation''.mid 13
+../autoencoder/sorted_midis/D_major/12. Chor Credo In Unum Deum .mid 2
+../autoencoder/sorted_midis/D_major/12. Chor Credo In Unum Deum .mid 3
+../autoencoder/sorted_midis/D_major/12. Chor Credo In Unum Deum .mid 4
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 1mov.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 1mov.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 1mov.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 1mov.mid 13
+../autoencoder/sorted_midis/D_major/Violin Concerto op61 1mov.mid 9
+../autoencoder/sorted_midis/D_major/Violin Concerto op61 1mov.mid 12
+../autoencoder/sorted_midis/D_major/Violin Concerto op61 1mov.mid 13
+../autoencoder/sorted_midis/D_major/Symphony n101 1mov ''Clock''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n101 1mov ''Clock''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n101 1mov ''Clock''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n101 1mov ''Clock''.mid 12
+../autoencoder/sorted_midis/D_major/04. Chor Gloria In Exelcis .mid 6
+../autoencoder/sorted_midis/D_major/04. Chor Gloria In Exelcis .mid 7
+../autoencoder/sorted_midis/D_major/04. Chor Gloria In Exelcis .mid 8
+../autoencoder/sorted_midis/D_major/04. Chor Gloria In Exelcis .mid 9
+../autoencoder/sorted_midis/D_major/Symphony n2 op73 1mov.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 1mov ''Prague''.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 1mov ''Prague''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 1mov ''Prague''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 1mov ''Prague''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 1mov ''Prague''.mid 11
+../autoencoder/sorted_midis/D_major/handel-water-music-hornpipe.mid 8
+../autoencoder/sorted_midis/D_major/handel-water-music-hornpipe.mid 9
+../autoencoder/sorted_midis/D_major/handel-water-music-hornpipe.mid 10
+../autoencoder/sorted_midis/D_major/handel-water-music-hornpipe.mid 11
+../autoencoder/sorted_midis/D_major/handel-water-music-hornpipe.mid 12
+../autoencoder/sorted_midis/D_major/mozart-clarinet-concerto-2.mid 5
+../autoencoder/sorted_midis/D_major/mozart-clarinet-concerto-2.mid 6
+../autoencoder/sorted_midis/D_major/mozart-clarinet-concerto-2.mid 7
+../autoencoder/sorted_midis/D_major/mozart-clarinet-concerto-2.mid 8
+../autoencoder/sorted_midis/D_major/mozart-clarinet-concerto-2.mid 9
+../autoencoder/sorted_midis/D_major/han-fir6.mid 1
+../autoencoder/sorted_midis/D_major/han-fir6.mid 5
+../autoencoder/sorted_midis/D_major/han-fir6.mid 9
+../autoencoder/sorted_midis/D_major/han-fir6.mid 10
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 4mov.mid 11
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 4mov.mid 12
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 4mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 4mov.mid 14
+../autoencoder/sorted_midis/D_major/han-fir5.mid 2
+../autoencoder/sorted_midis/D_major/han-fir5.mid 3
+../autoencoder/sorted_midis/D_major/op6n01m2.mid 3
+../autoencoder/sorted_midis/D_major/op6n01m2.mid 4
+../autoencoder/sorted_midis/D_major/handel-water-music-hornpipe-viola-and-piano.mid 1
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 4mov.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 4mov.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 4mov.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 4mov.mid 13
+../autoencoder/sorted_midis/D_major/scipione.mid 2
+../autoencoder/sorted_midis/D_major/Symphony n104 4mov ''London''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n104 4mov ''London''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n104 4mov ''London''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n104 4mov ''London''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n104 4mov ''London''.mid 12
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 3mov.mid 9
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 3mov.mid 10
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 3mov.mid 11
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 3mov.mid 12
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 3mov.mid 13
+../autoencoder/sorted_midis/D_major/Symphony D200 n3.mid 1
+../autoencoder/sorted_midis/D_major/Symphony D200 n3.mid 2
+../autoencoder/sorted_midis/D_major/Symphony D200 n3.mid 4
+../autoencoder/sorted_midis/D_major/Symphony D200 n3.mid 5
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 3mov.mid 8
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 3mov.mid 9
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 3mov.mid 10
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 3mov.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 3mov.mid 13
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 3mov.mid 14
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 4mov.mid 5
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 4mov.mid 6
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 4mov.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 4mov.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 4mov.mid 9
+../autoencoder/sorted_midis/D_major/Concerto op4 n03 for Violin Strings and Continuo RV301 1mov ''La Stravaganza''.mid 8
+../autoencoder/sorted_midis/D_major/Concerto op4 n03 for Violin Strings and Continuo RV301 1mov ''La Stravaganza''.mid 9
+../autoencoder/sorted_midis/D_major/Concerto op4 n03 for Violin Strings and Continuo RV301 1mov ''La Stravaganza''.mid 10
+../autoencoder/sorted_midis/D_major/Concerto op4 n03 for Violin Strings and Continuo RV301 1mov ''La Stravaganza''.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op4 n03 for Violin Strings and Continuo RV301 1mov ''La Stravaganza''.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n104 1mov ''London''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n104 1mov ''London''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n104 1mov ''London''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n104 1mov ''London''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n104 1mov ''London''.mid 12
+../autoencoder/sorted_midis/D_major/13. Chor Patrem Omnipotentem .mid 4
+../autoencoder/sorted_midis/D_major/13. Chor Patrem Omnipotentem .mid 5
+../autoencoder/sorted_midis/D_major/13. Chor Patrem Omnipotentem .mid 6
+../autoencoder/sorted_midis/D_major/13. Chor Patrem Omnipotentem .mid 7
+../autoencoder/sorted_midis/D_major/13. Chor Patrem Omnipotentem .mid 8
+../autoencoder/sorted_midis/D_major/Symphony n101 4mov ''Clock''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n101 4mov ''Clock''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n101 4mov ''Clock''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n101 4mov ''Clock''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n101 4mov ''Clock''.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n4 K019 1mov.mid 3
+../autoencoder/sorted_midis/D_major/Symphony n4 K019 1mov.mid 4
+../autoencoder/sorted_midis/D_major/Symphony n4 K019 1mov.mid 5
+../autoencoder/sorted_midis/D_major/18. Confiteor.mid 6
+../autoencoder/sorted_midis/D_major/18. Confiteor.mid 7
+../autoencoder/sorted_midis/D_major/18. Confiteor.mid 8
+../autoencoder/sorted_midis/D_major/18. Confiteor.mid 9
+../autoencoder/sorted_midis/D_major/han-fir4.mid 1
+../autoencoder/sorted_midis/D_major/han-fir4.mid 2
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 1mov.mid 9
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 1mov.mid 10
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 1mov.mid 11
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 1mov.mid 12
+../autoencoder/sorted_midis/D_major/Piano Concerto n16 K451 1mov.mid 13
+../autoencoder/sorted_midis/D_major/Symphony n70 1mov.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n70 1mov.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n70 1mov.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n70 1mov.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 3mov ''Prague''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 3mov ''Prague''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n38 K504 3mov ''Prague''.mid 11
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 1mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 1mov.mid 14
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 1mov.mid 15
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 1mov.mid 16
+../autoencoder/sorted_midis/D_major/reedpipe.mid 13
+../autoencoder/sorted_midis/D_major/bjsbmm12.mid 2
+../autoencoder/sorted_midis/D_major/bjsbmm12.mid 3
+../autoencoder/sorted_midis/D_major/bjsbmm12.mid 4
+../autoencoder/sorted_midis/D_major/op6n10m6.mid 3
+../autoencoder/sorted_midis/D_major/op6n10m6.mid 4
+../autoencoder/sorted_midis/D_major/Rodrigo_Concierto_de_Aranjuez_1_Allegro_con_Spirito.mid 18
+../autoencoder/sorted_midis/D_major/II_adagio.mid 11
+../autoencoder/sorted_midis/D_major/II_adagio.mid 12
+../autoencoder/sorted_midis/D_major/II_adagio.mid 13
+../autoencoder/sorted_midis/D_major/bjsair.mid 1
+../autoencoder/sorted_midis/D_major/heavenly.mid 2
+../autoencoder/sorted_midis/D_major/heavenly.mid 3
+../autoencoder/sorted_midis/D_major/mesiah35.mid 11
+../autoencoder/sorted_midis/D_major/mesiah35.mid 12
+../autoencoder/sorted_midis/D_major/mesiah35.mid 13
+../autoencoder/sorted_midis/D_major/mesiah35.mid 14
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 1mov.mid 8
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 1mov.mid 9
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 1mov.mid 10
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 1mov.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for Violin RV230 1mov.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 4mov ''Haffner''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 4mov ''Haffner''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 4mov ''Haffner''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 4mov ''Haffner''.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n35 K385 4mov ''Haffner''.mid 13
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 1mov.mid 5
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 1mov.mid 6
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 1mov.mid 7
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 1mov.mid 8
+../autoencoder/sorted_midis/D_major/Water Music Suite n2 Hwv349 1mov.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n31 K297 1mov ''Paris''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n31 K297 1mov ''Paris''.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for RV230 2mov.mid 8
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for RV230 2mov.mid 9
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for RV230 2mov.mid 10
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for RV230 2mov.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op3 n09 for RV230 2mov.mid 12
+../autoencoder/sorted_midis/D_major/jshcg656.mid 1
+../autoencoder/sorted_midis/D_major/jshcg656.mid 2
+../autoencoder/sorted_midis/D_major/jshcg656.mid 3
+../autoencoder/sorted_midis/D_major/Symphony n101 3mov ''Clock''.mid 8
+../autoencoder/sorted_midis/D_major/Symphony n101 3mov ''Clock''.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n101 3mov ''Clock''.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n101 3mov ''Clock''.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n101 3mov ''Clock''.mid 12
+../autoencoder/sorted_midis/D_major/06. Chor Gratias Animus Tibi .mid 6
+../autoencoder/sorted_midis/D_major/06. Chor Gratias Animus Tibi .mid 7
+../autoencoder/sorted_midis/D_major/06. Chor Gratias Animus Tibi .mid 8
+../autoencoder/sorted_midis/D_major/06. Chor Gratias Animus Tibi .mid 9
+../autoencoder/sorted_midis/D_major/20. Osanna .mid 6
+../autoencoder/sorted_midis/D_major/20. Osanna .mid 7
+../autoencoder/sorted_midis/D_major/20. Osanna .mid 8
+../autoencoder/sorted_midis/D_major/20. Osanna .mid 9
+../autoencoder/sorted_midis/D_major/Violin Concerto op61 2-3movs.mid 11
+../autoencoder/sorted_midis/D_major/Violin Concerto op61 2-3movs.mid 13
+../autoencoder/sorted_midis/D_major/Violin Concerto op61 2-3movs.mid 14
+../autoencoder/sorted_midis/D_major/Violin Concerto op61 2-3movs.mid 15
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 3mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 3mov.mid 14
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 3mov.mid 15
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 3mov.mid 16
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 1mov.mid 5
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 1mov.mid 7
+../autoencoder/sorted_midis/D_major/Symphony n30 K202 1mov.mid 8
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 3mov ''Coronation''.mid 9
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 3mov ''Coronation''.mid 11
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 3mov ''Coronation''.mid 12
+../autoencoder/sorted_midis/D_major/Piano Concerto n26 K537 3mov ''Coronation''.mid 13
+../autoencoder/sorted_midis/D_major/Concerto Grosso op6 n05 5mov.mid 3
+../autoencoder/sorted_midis/D_major/Concerto Grosso op6 n05 5mov.mid 4
+../autoencoder/sorted_midis/D_major/02. Christe Eleison .mid 4
+../autoencoder/sorted_midis/D_major/02. Christe Eleison .mid 5
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 1mov.mid 9
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 1mov.mid 10
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 1mov.mid 11
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 1mov.mid 13
+../autoencoder/sorted_midis/D_major/Concerto op3 n01 for 4 Violins RV549 1mov.mid 14
+../autoencoder/sorted_midis/D_major/tcha3_5.mid 10
+../autoencoder/sorted_midis/D_major/tcha3_5.mid 11
+../autoencoder/sorted_midis/D_major/tcha3_5.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 3mov.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 3mov.mid 10
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 3mov.mid 11
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 3mov.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n2 op36 3mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 5mov.mid 11
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 5mov.mid 12
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 5mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1068 Orchestral Suite n3 5mov.mid 14
+../autoencoder/sorted_midis/D_major/hpipe2.mid 6
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 2mov.mid 13
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 2mov.mid 14
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 2mov.mid 15
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 2mov.mid 16
+../autoencoder/sorted_midis/D_major/19. Sanctus .mid 7
+../autoencoder/sorted_midis/D_major/19. Sanctus .mid 8
+../autoencoder/sorted_midis/D_major/Gloria RV589 01mov Gloria In Exelsis.mid 1
+../autoencoder/sorted_midis/D_major/Gloria RV589 01mov Gloria In Exelsis.mid 2
+../autoencoder/sorted_midis/D_major/Gloria RV589 01mov Gloria In Exelsis.mid 3
+../autoencoder/sorted_midis/D_major/Gloria RV589 01mov Gloria In Exelsis.mid 4
+../autoencoder/sorted_midis/D_major/Happydays.mid 8
+../autoencoder/sorted_midis/D_major/Happydays.mid 9
+../autoencoder/sorted_midis/D_major/mesiah53.mid 14
+../autoencoder/sorted_midis/D_major/mesiah53.mid 15
+../autoencoder/sorted_midis/D_major/mesiah53.mid 16
+../autoencoder/sorted_midis/D_major/mesiah53.mid 17
+../autoencoder/sorted_midis/D_major/Gloria RV589 11mov Quoniam.mid 1
+../autoencoder/sorted_midis/D_major/Gloria RV589 11mov Quoniam.mid 2
+../autoencoder/sorted_midis/D_major/Gloria RV589 11mov Quoniam.mid 3
+../autoencoder/sorted_midis/D_major/Gloria RV589 11mov Quoniam.mid 4
+../autoencoder/sorted_midis/D_major/K525 Serenade 3mov ''Eine Kleine Natchmusik''.mid 1
+../autoencoder/sorted_midis/D_major/K525 Serenade 3mov ''Eine Kleine Natchmusik''.mid 2
+../autoencoder/sorted_midis/D_major/K525 Serenade 3mov ''Eine Kleine Natchmusik''.mid 3
+../autoencoder/sorted_midis/D_major/K525 Serenade 3mov ''Eine Kleine Natchmusik''.mid 4
+../autoencoder/sorted_midis/D_major/K525 Serenade 3mov ''Eine Kleine Natchmusik''.mid 5
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 1mov.mid 19
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 1mov.mid 22
+../autoencoder/sorted_midis/D_major/Tchaikovsky Lake Of The Swans Act 1 1mov.mid 23
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 3mov.mid 6
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 3mov.mid 7
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 3mov.mid 8
+../autoencoder/sorted_midis/D_major/K314 Flute Concerto n2 3mov.mid 9
+../autoencoder/sorted_midis/D_major/Symphony n4 op120 4mov.mid 15
+../autoencoder/sorted_midis/D_major/Symphony n4 op120 4mov.mid 16
+../autoencoder/sorted_midis/D_major/gmfigaro.mid 1
+../autoencoder/sorted_midis/D_major/gmfigaro.mid 2
+../autoencoder/sorted_midis/D_major/gmfigaro.mid 4
+../autoencoder/sorted_midis/D_major/cmveder.mid 4
+../autoencoder/sorted_midis/D_major/cmveder.mid 5
+../autoencoder/sorted_midis/D_major/cmveder.mid 6
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 4mov.mid 9
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 4mov.mid 10
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 4mov.mid 11
+../autoencoder/sorted_midis/D_major/Bwv1069 Orchestral Suite n4 4mov.mid 12
+../autoencoder/sorted_midis/D_major/Symphony n88 2mov.mid 11
+../autoencoder/sorted_midis/D_major/adagio-for-strings.mid 1
+../autoencoder/sorted_midis/D_major/adagio-for-strings.mid 2
+../autoencoder/sorted_midis/D_major/adagio-for-strings.mid 3
+../autoencoder/sorted_midis/D_major/adagio-for-strings.mid 4
+../autoencoder/sorted_midis/D_major/Gloria RV589 12mov Qum Sancto Espiritu.mid 1
+../autoencoder/sorted_midis/D_major/Gloria RV589 12mov Qum Sancto Espiritu.mid 2
+../autoencoder/sorted_midis/D_major/Gloria RV589 12mov Qum Sancto Espiritu.mid 3
+../autoencoder/sorted_midis/D_major/Gloria RV589 12mov Qum Sancto Espiritu.mid 4
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 1mov Overture.mid 19
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 1mov Overture.mid 20
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 1mov Overture.mid 21
+../autoencoder/sorted_midis/D_major/Royal Fireworks Suite 1mov Overture.mid 22
+../autoencoder/sorted_midis/D_major/sib2-1.mid 22
+../autoencoder/sorted_midis/D_major/sib2-1.mid 23
+../autoencoder/sorted_midis/D_major/sib2-1.mid 24
+../autoencoder/sorted_midis/D_major/sib2-1.mid 27
+../autoencoder/sorted_midis/D_major/sib2-1.mid 28
+../autoencoder/sorted_midis/D_major/sib2-1.mid 29
+../autoencoder/sorted_midis/D_major/sib2-1.mid 31
+../autoencoder/sorted_midis/D_major/sib2-1.mid 32
+../autoencoder/sorted_midis/D_major/sib2-1.mid 33
+../autoencoder/sorted_midis/D_major/Dvorak Symphony op70 n7 4mov.mid 11
+../autoencoder/sorted_midis/D_major/Dvorak Symphony op70 n7 4mov.mid 12
+../autoencoder/sorted_midis/D_major/Dvorak Symphony op70 n7 4mov.mid 14
+../autoencoder/sorted_midis/D_major/Dvorak Symphony op70 n7 4mov.mid 15
+../autoencoder/sorted_midis/D_major/hdn104_1.mid 8
+../autoencoder/sorted_midis/D_major/hdn104_1.mid 9
+../autoencoder/sorted_midis/D_major/hdn104_1.mid 10
+../autoencoder/sorted_midis/D_major/hdn104_3.mid 8
+../autoencoder/sorted_midis/D_major/hdn104_3.mid 9
+../autoencoder/sorted_midis/D_major/hdn104_3.mid 10
+../autoencoder/sorted_midis/D_major/controm.mid 3
+../autoencoder/sorted_midis/D_major/controm.mid 4
+../autoencoder/sorted_midis/D_major/controm.mid 5
+../autoencoder/sorted_midis/D_major/controm.mid 6
+../autoencoder/sorted_midis/D_major/gfhblast.mid 7
+../autoencoder/sorted_midis/D_major/gfhblast.mid 8
+../autoencoder/sorted_midis/D_major/11. Chor Cum Sancto .mid 6
+../autoencoder/sorted_midis/D_major/11. Chor Cum Sancto .mid 7
+../autoencoder/sorted_midis/D_major/11. Chor Cum Sancto .mid 8
+../autoencoder/sorted_midis/D_major/11. Chor Cum Sancto .mid 9

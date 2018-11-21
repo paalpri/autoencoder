@@ -1,5 +1,5 @@
-pitch_to_note_conv = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
-
+pitch_to_note_conv = [ 'A', 'A#', 'B','C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
+  
 instrument_name = {0	: 'Acoustic Grand',
 1	: 'Bright Acoustic',
 2	: 'Electric Grand',

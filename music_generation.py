@@ -17,7 +17,7 @@ import random
 from pprint import pprint
 import shutil, os
 import pickle
-from keras.models import load_model
+
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 
 # Delete the previous logs, for better tensorboard looks

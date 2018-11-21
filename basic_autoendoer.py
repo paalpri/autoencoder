@@ -17,6 +17,7 @@ import random
 from pprint import pprint
 import shutil, os
 import pickle
+from keras.utils.vis_utils import plot_model
 
 # The main part of the code is taken from: https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/
 
@@ -28,7 +29,7 @@ if os.path.isdir("logs"):
 filename = sys.argv[1]
 # makes a txt document into a list of arrays, one array for each line
 data = np.genfromtxt(filename, delimiter=" ", dtype=int)
-data = data[:- (len(data) % int(sys.argv[2]))]
+data = data[:-(len(data) % int(sys.argv[2]))]
 data_one = to_categorical(data) #One-hot encoding
 
 # Parameters
@@ -45,7 +46,7 @@ K.set_epsilon(1e-05)
 
 def sample_z(args):
     mu, log_sigma = args
-    eps = K.random_normal(shape=(latent_dim,), mean=0., stddev=.1)
+    eps = K.random_normal(shape=(latent_dim,), mean=0., stddev=0.1)
     return mu + K.exp(0.5*log_sigma) * eps 
 
 
@@ -64,7 +65,7 @@ def vae_loss(y_true, y_pred):
 
     kl = - 0.5 * K.sum(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
 
-    return K.mean(recon + kl)
+    return recon + kl
 
 
 # VAE model = encoder + decoder
@@ -72,7 +73,6 @@ def vae_loss(y_true, y_pred):
 inputs = Input(shape=(original_dim1, original_dim2, ), name='encoder_input')
 x = Flatten()(inputs)
 x = Dense(intermediate_dim, activation='relu')(x)
-#x = Dropout(0.2)(x)
 x = Dense(intermediate_dim, activation='relu')(x)
 z_mean = Dense(latent_dim, name='z_mean')(x)
 z_log_var = Dense(latent_dim, name='z_log_var')(x)
@@ -84,6 +84,7 @@ z = Lambda(sample_z, output_shape=(latent_dim,), name='z')([z_mean, z_log_var])
 # instantiate encoder model
 encoder = Model(inputs, [z_mean, z_log_var, z], name='encoder')
 encoder.summary()
+plot_model(encoder, to_file='encoder_plot.png', show_shapes=True, show_layer_names=True)
 
 # build decoder model
 latent_inputs = Input(shape=(latent_dim,), name='z_sampling')
@@ -96,10 +97,12 @@ outputs = Reshape((original_dim1, original_dim2))(x)
 # instantiate decoder model
 decoder = Model(latent_inputs, outputs, name='decoder')
 decoder.summary()
+plot_model(decoder, to_file='decoder_plot.png', show_shapes=True, show_layer_names=True)
 
 # instantiate VAE model
 outputs = decoder(encoder(inputs)[2])
 vae = Model(inputs, outputs, name='vae')
+#plot_model(vae, to_file='vae_plot.png', show_shapes=True, show_layer_names=True)
 
 # checkpoint
 tensorboard = TensorBoard(log_dir="logs", write_graph=True, histogram_freq=0,)

@@ -1,0 +1,114 @@
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/rejoice.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/op6n01m2.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Concerto Grosso op6 n01 2mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Air.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Air.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Overture.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Overture.mid 20
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Hwv063 Judas Maccabeus 58 Chorus.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Bourree.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Bourree.mid 20
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Hwv258 Coronation Anthem n1 ''Zadok the Priest''.mid 20
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1054 Harpsichord Concerto n3 1mov.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/op6n10m6.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Rejouissance.mid 12
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Rejouissance.mid 24
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/seraphim.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/gfhblast.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-4sar.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-4sar.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-4sar.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-4sar.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Gigue.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Gigue.mid 20
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Water Music Suite n2 Hwv349 2mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/K525 Serenade 3mov ''Eine Kleine Natchmusik''.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Menuet.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Menuet.mid 16
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Gavotte.mid 12
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Gavotte.mid 24
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-6gig.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-6gig.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-6gig.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-6gig.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-3cou.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Satie-Gymnopedie1-cello-piano.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Concerto Grosso op6 n10 6mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/menuet.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/controm.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Bourree.mid 12
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Bourree.mid 24
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/10. Aria Quoniam.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-1pre.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-1pre.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-1pre.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Concerto Grosso op6 n05 5mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/heavenly.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/tking.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-5gav.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-5gav.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-5gav.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/cs6-5gav.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Gavotte.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1068 Orchestral suite n3 Gavotte.mid 20
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Overture.mid 12
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Overture.mid 13
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Overture.mid 25
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/D_major/Bwv1069 Orchestral suite n4 Overture.mid 26

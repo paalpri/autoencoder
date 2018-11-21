@@ -113,6 +113,7 @@ vae.fit(data_one, data_one, verbose=1, shuffle=True, batch_size=batch_size, epoc
 pred = vae.predict(data_one[:batch_size], verbose=1, batch_size=batch_size)
 
 
+
 res = []
 print(np.shape(pred[0]))
 for i in (pred):
@@ -122,7 +123,7 @@ for i in (pred):
     res.append(song)
 
 for i in range(3):
-    print("Input: %s" %(data[i]))
+    print("Input: %s<16" %(data[i]))
     print("Predicted: %s" %(res[i]))
 
 decoder.save('decoder_model.h5')

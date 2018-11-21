@@ -1,0 +1,118 @@
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/volta.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/minuetg.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/mozsq1.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/monach.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/saint-saens-carnival-of-the-animals-the-swan.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/holberg2.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-5men.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-5men.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-5men.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Oboe and Bassoon Concerto RV545 1mov.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/flute-1.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-2all.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-2all.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-2all.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/gfh-jm56.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/gfh-jm06.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/flute-5.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/op6n01m4.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/holberg1.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Hwv063 Judas Maccabeus 06 Aria.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Hwv063 Judas Maccabeus 56 Chorus.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/ba_bran6.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/ba_bran6.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/ba_bran6.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/chinaxmas.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Concerto Grosso op6 n01 4mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-6gig.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-6gig.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-6gig.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Gloria.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/K525 Serenade 1mov ''Eine Kleine Natchmusik''.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/trioson4.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/K525 Serenade 4mov ''Eine Kleine Natchmusik''.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Oboe and Bassoon Concerto RV545 3mov.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/comagain.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-3cou.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-3cou.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs3-6gig.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs3-6gig.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs3-6gig.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs3-6gig.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/trioson2.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/flute-4.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Concerto Grosso op6 n01 5mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/never.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Hwv063 Judas Maccabeus 30-31 Duet & Chorus.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/3.Gebt mir meinen Jesum weider Bass Aria.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/trioson1.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-4sar.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-4sar.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-4sar.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-4sar.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Bwv1048 Brandenburg Concert n3 1mov.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Bwv1048 Brandenburg Concert n3 1mov.mid 8
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/Bwv1048 Brandenburg Concert n3 1mov.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/flute-2.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-1pre.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/cs1-1pre.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/G_major/coup8a.mid 5

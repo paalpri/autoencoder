@@ -1,0 +1,90 @@
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n09 6mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/lascia.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/op6n02m4.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/occhi.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n02 4mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Magnificat n8 ''Sicut Locutus''.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Magnificat n8 ''Sicut Locutus''.mid 13
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/jshcg652.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Hwv265 The King Shall Rejoice ''Dettington Anthem''.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/op6n02m3.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n09 1mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/op6n09m6.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/gavota.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Bwv1046 aSinfonia h.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/largo1.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/bourree.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/wbfan1.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/wbfan1.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/hwv333-6.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Water Music Allegro 2.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/butoh.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/op6n02m1.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/op6n02m1.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n02 1mov.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n02 1mov.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/pre-cavr.mid 13
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n09 4mov.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/courtly.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n09 2mov.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n09 2mov.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/redf_sal.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/krejoice.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/op6n09m4.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/mthuo74c.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/op6n09m1.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Water Music Bourree 2.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/allegro.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/va-tacit.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/6-4-3.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/6-4-3.mid 7
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/wwbirds.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Bwv1046 Brandenburg Concert n1 3mov.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n05 2mov.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Bwv1046 Brandenburg Concert n1 1mov.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/F_major/Concerto Grosso op6 n02 3mov.mid 6

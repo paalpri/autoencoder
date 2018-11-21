@@ -1,0 +1,94 @@
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-1pre.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-1pre.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-1pre.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-1pre.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/wbpavan.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/wbpavan.mid 12
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/entree.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/K299 Flute Harp Concerto 3mov.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/K299 Flute Harp Concerto 3mov.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Sunday Traffic.mid 12
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Forlane.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Forlane.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Hwv063 Judas Maccabeus 09-10 Aria & Chorus.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-5bou.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-5bou.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-5bou.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-2all.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-2all.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-2all.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-2all.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Menuet.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Menuet.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/moz_k299.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/moz_k299.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/locus-iste.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/lazy-waves.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1064 Three Harpsichords Concerto n2 1mov.mid 10
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/wbgallrd.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/wbgallrd.mid 6
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Bouree.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Bouree.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/K525 Serenade 2mov ''Eine Kleine Natchmusik''.mid 9
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Overture.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Overture.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/branle.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Courante.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Courante.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1041 Violin Concerto n1 2mov.mid 5
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Gavotte.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Gavotte.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Passpied.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/Bwv1066 Orchestral suite n1 Passpied.mid 11
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-4sar.mid 1
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-4sar.mid 2
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-4sar.mid 3
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/cs3-4sar.mid 4
+
+/home/primstad/student/autoencoder/sorted_classical_by_key/sorted_classical/C_major/mz_quarc.mid 3

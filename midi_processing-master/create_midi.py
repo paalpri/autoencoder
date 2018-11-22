@@ -115,7 +115,7 @@ def reconstruct_original(filename, id_track, window):
             for element in elements:
                 track.append(element)
 
-            instrument = midi.ProgramChangeEvent(data=[0])
+            instrument = midi.ProgramChangeEvent(data=[42])
             track.append(instrument)
 
 
@@ -164,7 +164,7 @@ def vae_midi(all_notes, all_end_notes, elements, filename):
     for element in elements:
         track.append(element)
 
-    instrument = midi.ProgramChangeEvent(data=[0])
+    instrument = midi.ProgramChangeEvent(data=[42])
     track.append(instrument)
 
 
